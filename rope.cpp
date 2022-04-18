@@ -4,9 +4,9 @@
 #include <fstream>
 #include "string.h"
 #include <string> 
+
  
 using namespace std;
-using namespace gazebo;
  
 int main(int argc, char** argv) 
 {
@@ -33,7 +33,7 @@ ros::init(argc, argv, "gaztest");
     double radius=0.003, length=2;
     int kol=length/(2*radius);
     
-    for(int i=0;i</*kol*/ 2;i++)
+    for(int i=0;i<kol;i++)
     {    
     srv.request.model_xml = model;
     std::string s = std::to_string(i);
@@ -41,12 +41,15 @@ ros::init(argc, argv, "gaztest");
     geometry_msgs::Pose pose;
     add_robot.call(srv);
       sleep(1.0);
-    gazebo_msgs::ModelState msg;
-    msg.model_name = "ball"+s;
-    msg.pose.position.z = 2*radius;
-    pub.publish(msg);
-    ros::spinOnce();
-     sleep(1.0);
+      
+      if(i>0) 
+      {
+       gazebo_msgs::ModelState msg;
+       msg.model_name = "ball"+s;
+       msg.pose.position.z = 2*i*radius;
+       pub.publish(msg);
+       //sleep(1.0);
+      }
     }
     
    
