@@ -51,14 +51,17 @@ ros::init(argc, argv, "gaztest");
        msg.pose.position.z = 2*i*radius;
        pub.publish(msg);
        //sleep(1.0);
+       
         FILE* output=NULL;
 	output = fopen("joint.txt", "w");
+	fprintf(output, "<? xml version = '1.0'?> \n <sdf version = '1.7'> \n <model name = 'joint'>");
 	fprintf(output, "<joint name = %s type = %s> \n <origin xyz= %d. %d. %d rpy= %d. %d. %d /> \n <parent link=%s", "ball_joint","ball", 0, 0, 0, 0, 0, 0, "ball");
 	int nomer=i-1;
 	fprintf(output, "%d", nomer);
 	fprintf(output, "/> \n <child link =%s", "ball");
 	fprintf(output, "%d", i);
 	fprintf(output, " /> \n </joint>");
+	fprintf(output, "</model> \n </sdf>");
 	fclose(output);
     
     ifstream readJoint("joint.txt");
@@ -68,6 +71,12 @@ ros::init(argc, argv, "gaztest");
         getline(readJoint, bufJoint);
         joint += bufJoint + "\n";
     }
+    srv.request.model_xml = joint;
+    std::string sJoint = std::to_string(i);
+    srv.request.model_name = "sJoint"+s;
+    geometry_msgs::Pose pose;
+    add_robot.call(srv);
+      sleep(1.0);
       }
     }
     
