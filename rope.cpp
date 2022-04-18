@@ -4,6 +4,7 @@
 #include <fstream>
 #include "string.h"
 #include <string> 
+#include <sensor_msgs/JointState.h>
 
  
 using namespace std;
@@ -33,6 +34,7 @@ ros::init(argc, argv, "gaztest");
     double radius=0.003, length=2;
     int kol=length/(2*radius);
     
+    
     for(int i=0;i<kol;i++)
     {    
     srv.request.model_xml = model;
@@ -49,19 +51,25 @@ ros::init(argc, argv, "gaztest");
        msg.pose.position.z = 2*i*radius;
        pub.publish(msg);
        //sleep(1.0);
+        FILE* output=NULL;
+	output = fopen("joint.txt", "w");
+	fprintf(output, "<joint name = %s type = %s> \n <origin xyz= %d. %d. %d rpy= %d. %d. %d /> \n <parent link=%s", "ball_joint","ball", 0, 0, 0, 0, 0, 0, "ball");
+	int nomer=i-1;
+	fprintf(output, "%d", nomer);
+	fprintf(output, "/> \n <child link =%s", "ball");
+	fprintf(output, "%d", i);
+	fprintf(output, " /> \n </joint>");
+	fclose(output);
+    
+    ifstream readJoint("joint.txt");
+    string bufJoint;
+    string joint;
+    while(!readJoint.eof()){
+        getline(readJoint, bufJoint);
+        joint += bufJoint + "\n";
+    }
       }
     }
     
-   
- 
-    
-    //Spawning finished
- 
-    //gazebo_msgs::ModelState msg;
-    //msg.model_name = "ball";
-    //msg.pose.position.x = 2.0;
-    //pub.publish(msg);
-    //sleep(1.0);
-    //ros::spinOnce();
     return 0;
 }
