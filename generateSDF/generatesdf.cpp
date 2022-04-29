@@ -6,7 +6,7 @@ using namespace std;
 int main()
 {
 	ofstream is("model2.txt");
-	float rad = 0.001, length=1;
+	float rad = 0.001, length=0.1;
 	int kol = length / (2 * rad);
 	//начало
 	is << "<?xml version='1.0'?>\n<sdf version = '1.7'>\n<model name = 'my_rope'>\n";
@@ -31,9 +31,7 @@ int main()
 		is << "<joint name='link_JOINT_" << i + 1 << "' type='ball'\n>";
 		is << "<parent>ball_bearing_" << i << "::link</parent>\n";
 		is << "<child>ball_bearing_" << i + 1 << "::link</child>\n";
-		is << "<pose>" << 0 << " " << 0 << " " << 0 << " " << 0 << " " << -0 << " " << 0 << " " << "</pose>\n";
-		is << "<physics>\n<ode>\n<limit>\n<cfm>0</cfm>\n<erp>0.2</erp>\n</limit>\n<suspension>\n<cfm>0</cfm>\n<erp>0.2</erp>\n</suspension>\n</ode>\n";
-		is << "</physics>\n</joint>\n";
+		is << "</joint>\n";
 	}
 	//конец
 	is << "<static>0</static>\n<allow_auto_disable>1</allow_auto_disable>\n</model>\n</sdf>";

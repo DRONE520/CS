@@ -18,9 +18,6 @@ ros::init(argc, argv, "gaztest");
     ros::ServiceClient add_robot;
     gazebo_msgs::SpawnModel srv;
     ifstream fin("/home/natasha/cop/workspace/src/lab1/model2.txt");
-    
-    ros::Publisher pub = 
-            node.advertise<gazebo_msgs::ModelState>("gazebo/set_model_state", 10);
  
     string model;
     string buf;
@@ -36,9 +33,7 @@ ros::init(argc, argv, "gaztest");
     srv.request.model_xml = model;
     srv.request.model_name = "ball";
     geometry_msgs::Pose pose;
-    add_robot.call(srv);
-      sleep(1.0);
-      
+    add_robot.call(srv);      
 
     return 0;
 }
