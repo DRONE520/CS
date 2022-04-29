@@ -1,23 +1,16 @@
-#include "ros/ros.h"
-#include "gazebo_msgs/SpawnModel.h"
-#include "gazebo_msgs/ModelState.h"
-#include <fstream>
-#include "string.h"
-#include <string> 
-#include <sensor_msgs/JointState.h>
-#include <fstream>
+#include "rope.h"
  
 using namespace std;
  
 int main(int argc, char** argv) 
 {
-
+rope();
 ros::init(argc, argv, "gaztest");
     ros::NodeHandle node;
     ros::service::waitForService("gazebo/spawn_sdf_model");
     ros::ServiceClient add_robot;
     gazebo_msgs::SpawnModel srv;
-    ifstream fin("/home/natasha/cop/workspace/src/lab1/model2.txt");
+    ifstream fin("model2.txt");
  
     string model;
     string buf;

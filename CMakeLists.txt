@@ -18,7 +18,7 @@ ${GAZEBO_INCLUDE_DIRS}
 ${SDFormat_INCLUDE_DIRS}
 )
 
-add_executable(lab1 newRope.cpp)
+add_executable(lab1 rope.h generatesdf.cpp newRope.cpp)
 
 target_link_libraries(lab1 ${catkin_LIBRARIES})
 

@@ -1,9 +1,6 @@
-#include <string>
-#include <iostream>
-#include <sstream>
-#include <fstream>
-using namespace std;
-int main()
+#include "rope.h"
+
+int rope()
 {
 	ofstream is("model2.txt");
 	float rad = 0.001, length=0.1;
