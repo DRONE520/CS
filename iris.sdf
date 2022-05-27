@@ -493,7 +493,7 @@
       <model name='fastening'>
         <link name='link'>
           <inertial>
-            <mass>0.00001</mass>
+            <mass>1e-06</mass>
             <inertia>
               <ixx>0.166667</ixx>
               <ixy>0</ixy>
@@ -592,7 +592,7 @@
         <link name='link'>
           <pose frame=''>0 0 0.003 0 -0 0</pose>
           <inertial>
-            <mass>0.000011</mass>
+            <mass>1.1e-07</mass>
             <inertia>
               <ixx>3.96e-09</ixx>
               <ixy>0</ixy>
@@ -646,7 +646,7 @@
         <link name='link'>
           <pose frame=''>0 0 0.003 0 -0 0</pose>
           <inertial>
-            <mass>0.0011</mass>
+            <mass>1.1e-07</mass>
             <inertia>
               <ixx>3.96e-09</ixx>
               <ixy>0</ixy>
@@ -700,7 +700,7 @@
         <link name='link'>
           <pose frame=''>0 0 0.003 0 -0 0</pose>
           <inertial>
-            <mass>0.000011</mass>
+            <mass>1.1e-07</mass>
             <inertia>
               <ixx>3.96e-09</ixx>
               <ixy>0</ixy>
@@ -754,7 +754,7 @@
         <link name='link'>
           <pose frame=''>0 0 0.003 0 -0 0</pose>
           <inertial>
-            <mass>0.000011</mass>
+            <mass>1.1e-07</mass>
             <inertia>
               <ixx>3.96e-09</ixx>
               <ixy>0</ixy>
@@ -808,7 +808,7 @@
         <link name='link'>
           <pose frame=''>0 0 0.003 0 -0 0</pose>
           <inertial>
-            <mass>0.000011</mass>
+            <mass>1.1e-07</mass>
             <inertia>
               <ixx>3.96e-09</ixx>
               <ixy>0</ixy>
@@ -862,7 +862,7 @@
         <link name='link'>
           <pose frame=''>0 0 0.003 0 -0 0</pose>
           <inertial>
-            <mass>0.000011</mass>
+            <mass>1.1e-07</mass>
             <inertia>
               <ixx>3.96e-09</ixx>
               <ixy>0</ixy>
@@ -916,7 +916,7 @@
         <link name='link'>
           <pose frame=''>0 0 0.003 0 -0 0</pose>
           <inertial>
-            <mass>0.000011</mass>
+            <mass>1.1e-07</mass>
             <inertia>
               <ixx>3.96e-09</ixx>
               <ixy>0</ixy>
@@ -970,7 +970,7 @@
         <link name='link'>
           <pose frame=''>0 0 0.003 0 -0 0</pose>
           <inertial>
-            <mass>0.000011</mass>
+            <mass>1.1e-07</mass>
             <inertia>
               <ixx>3.96e-09</ixx>
               <ixy>0</ixy>
@@ -1024,7 +1024,7 @@
         <link name='link'>
           <pose frame=''>0 0 0.003 0 -0 0</pose>
           <inertial>
-            <mass>0.000011</mass>
+            <mass>1.1e-07</mass>
             <inertia>
               <ixx>3.96e-09</ixx>
               <ixy>0</ixy>
@@ -1078,7 +1078,7 @@
         <link name='link'>
           <pose frame=''>0 0 0.003 0 -0 0</pose>
           <inertial>
-            <mass>0.000011</mass>
+            <mass>1.1e-07</mass>
             <inertia>
               <ixx>3.96e-09</ixx>
               <ixy>0</ixy>
@@ -1128,6 +1128,4866 @@
         </link>
         <pose frame=''>0 0.45 0 0 -0 0</pose>
       </model>
+      <model name='ball_bearing_10'>
+        <link name='link'>
+          <pose frame=''>0 0 0.003 0 -0 0</pose>
+          <inertial>
+            <mass>1.1e-07</mass>
+            <inertia>
+              <ixx>3.96e-09</ixx>
+              <ixy>0</ixy>
+              <ixz>0</ixz>
+              <iyy>3.96e-09</iyy>
+              <iyz>0</iyz>
+              <izz>3.96e-09</izz>
+            </inertia>
+          </inertial>
+          <collision name='collision'>
+            <geometry>
+              <sphere>
+                <radius>0.025</radius>
+              </sphere>
+            </geometry>
+            <surface>
+              <contact>
+                <poissons_ratio>0.305</poissons_ratio>
+                <elastic_modulus>2e+11</elastic_modulus>
+                <ode>
+                  <kp>100000</kp>
+                  <kd>100</kd>
+                  <max_vel>100</max_vel>
+                  <min_depth>0.001</min_depth>
+                </ode>
+              </contact>
+              <friction>
+                <torsional>
+                  <coefficient>1</coefficient>
+                  <use_patch_radius>0</use_patch_radius>
+                  <surface_radius>0.01</surface_radius>
+                </torsional>
+              </friction>
+            </surface>
+          </collision>
+          <visual name='visual'>
+            <geometry>
+              <sphere>
+                <radius>0.025</radius>
+              </sphere>
+            </geometry>
+          </visual>
+          <velocity_decay>
+            <linear>0</linear>
+            <angular>0.005</angular>
+          </velocity_decay>
+        </link>
+        <pose frame=''>0 0.5 0 0 -0 0</pose>
+      </model>
+      <model name='ball_bearing_11'>
+        <link name='link'>
+          <pose frame=''>0 0 0.003 0 -0 0</pose>
+          <inertial>
+            <mass>1.1e-07</mass>
+            <inertia>
+              <ixx>3.96e-09</ixx>
+              <ixy>0</ixy>
+              <ixz>0</ixz>
+              <iyy>3.96e-09</iyy>
+              <iyz>0</iyz>
+              <izz>3.96e-09</izz>
+            </inertia>
+          </inertial>
+          <collision name='collision'>
+            <geometry>
+              <sphere>
+                <radius>0.025</radius>
+              </sphere>
+            </geometry>
+            <surface>
+              <contact>
+                <poissons_ratio>0.305</poissons_ratio>
+                <elastic_modulus>2e+11</elastic_modulus>
+                <ode>
+                  <kp>100000</kp>
+                  <kd>100</kd>
+                  <max_vel>100</max_vel>
+                  <min_depth>0.001</min_depth>
+                </ode>
+              </contact>
+              <friction>
+                <torsional>
+                  <coefficient>1</coefficient>
+                  <use_patch_radius>0</use_patch_radius>
+                  <surface_radius>0.01</surface_radius>
+                </torsional>
+              </friction>
+            </surface>
+          </collision>
+          <visual name='visual'>
+            <geometry>
+              <sphere>
+                <radius>0.025</radius>
+              </sphere>
+            </geometry>
+          </visual>
+          <velocity_decay>
+            <linear>0</linear>
+            <angular>0.005</angular>
+          </velocity_decay>
+        </link>
+        <pose frame=''>0 0.55 0 0 -0 0</pose>
+      </model>
+      <model name='ball_bearing_12'>
+        <link name='link'>
+          <pose frame=''>0 0 0.003 0 -0 0</pose>
+          <inertial>
+            <mass>1.1e-07</mass>
+            <inertia>
+              <ixx>3.96e-09</ixx>
+              <ixy>0</ixy>
+              <ixz>0</ixz>
+              <iyy>3.96e-09</iyy>
+              <iyz>0</iyz>
+              <izz>3.96e-09</izz>
+            </inertia>
+          </inertial>
+          <collision name='collision'>
+            <geometry>
+              <sphere>
+                <radius>0.025</radius>
+              </sphere>
+            </geometry>
+            <surface>
+              <contact>
+                <poissons_ratio>0.305</poissons_ratio>
+                <elastic_modulus>2e+11</elastic_modulus>
+                <ode>
+                  <kp>100000</kp>
+                  <kd>100</kd>
+                  <max_vel>100</max_vel>
+                  <min_depth>0.001</min_depth>
+                </ode>
+              </contact>
+              <friction>
+                <torsional>
+                  <coefficient>1</coefficient>
+                  <use_patch_radius>0</use_patch_radius>
+                  <surface_radius>0.01</surface_radius>
+                </torsional>
+              </friction>
+            </surface>
+          </collision>
+          <visual name='visual'>
+            <geometry>
+              <sphere>
+                <radius>0.025</radius>
+              </sphere>
+            </geometry>
+          </visual>
+          <velocity_decay>
+            <linear>0</linear>
+            <angular>0.005</angular>
+          </velocity_decay>
+        </link>
+        <pose frame=''>0 0.6 0 0 -0 0</pose>
+      </model>
+      <model name='ball_bearing_13'>
+        <link name='link'>
+          <pose frame=''>0 0 0.003 0 -0 0</pose>
+          <inertial>
+            <mass>1.1e-07</mass>
+            <inertia>
+              <ixx>3.96e-09</ixx>
+              <ixy>0</ixy>
+              <ixz>0</ixz>
+              <iyy>3.96e-09</iyy>
+              <iyz>0</iyz>
+              <izz>3.96e-09</izz>
+            </inertia>
+          </inertial>
+          <collision name='collision'>
+            <geometry>
+              <sphere>
+                <radius>0.025</radius>
+              </sphere>
+            </geometry>
+            <surface>
+              <contact>
+                <poissons_ratio>0.305</poissons_ratio>
+                <elastic_modulus>2e+11</elastic_modulus>
+                <ode>
+                  <kp>100000</kp>
+                  <kd>100</kd>
+                  <max_vel>100</max_vel>
+                  <min_depth>0.001</min_depth>
+                </ode>
+              </contact>
+              <friction>
+                <torsional>
+                  <coefficient>1</coefficient>
+                  <use_patch_radius>0</use_patch_radius>
+                  <surface_radius>0.01</surface_radius>
+                </torsional>
+              </friction>
+            </surface>
+          </collision>
+          <visual name='visual'>
+            <geometry>
+              <sphere>
+                <radius>0.025</radius>
+              </sphere>
+            </geometry>
+          </visual>
+          <velocity_decay>
+            <linear>0</linear>
+            <angular>0.005</angular>
+          </velocity_decay>
+        </link>
+        <pose frame=''>0 0.65 0 0 -0 0</pose>
+      </model>
+      <model name='ball_bearing_14'>
+        <link name='link'>
+          <pose frame=''>0 0 0.003 0 -0 0</pose>
+          <inertial>
+            <mass>1.1e-07</mass>
+            <inertia>
+              <ixx>3.96e-09</ixx>
+              <ixy>0</ixy>
+              <ixz>0</ixz>
+              <iyy>3.96e-09</iyy>
+              <iyz>0</iyz>
+              <izz>3.96e-09</izz>
+            </inertia>
+          </inertial>
+          <collision name='collision'>
+            <geometry>
+              <sphere>
+                <radius>0.025</radius>
+              </sphere>
+            </geometry>
+            <surface>
+              <contact>
+                <poissons_ratio>0.305</poissons_ratio>
+                <elastic_modulus>2e+11</elastic_modulus>
+                <ode>
+                  <kp>100000</kp>
+                  <kd>100</kd>
+                  <max_vel>100</max_vel>
+                  <min_depth>0.001</min_depth>
+                </ode>
+              </contact>
+              <friction>
+                <torsional>
+                  <coefficient>1</coefficient>
+                  <use_patch_radius>0</use_patch_radius>
+                  <surface_radius>0.01</surface_radius>
+                </torsional>
+              </friction>
+            </surface>
+          </collision>
+          <visual name='visual'>
+            <geometry>
+              <sphere>
+                <radius>0.025</radius>
+              </sphere>
+            </geometry>
+          </visual>
+          <velocity_decay>
+            <linear>0</linear>
+            <angular>0.005</angular>
+          </velocity_decay>
+        </link>
+        <pose frame=''>0 0.7 0 0 -0 0</pose>
+      </model>
+      <model name='ball_bearing_15'>
+        <link name='link'>
+          <pose frame=''>0 0 0.003 0 -0 0</pose>
+          <inertial>
+            <mass>1.1e-07</mass>
+            <inertia>
+              <ixx>3.96e-09</ixx>
+              <ixy>0</ixy>
+              <ixz>0</ixz>
+              <iyy>3.96e-09</iyy>
+              <iyz>0</iyz>
+              <izz>3.96e-09</izz>
+            </inertia>
+          </inertial>
+          <collision name='collision'>
+            <geometry>
+              <sphere>
+                <radius>0.025</radius>
+              </sphere>
+            </geometry>
+            <surface>
+              <contact>
+                <poissons_ratio>0.305</poissons_ratio>
+                <elastic_modulus>2e+11</elastic_modulus>
+                <ode>
+                  <kp>100000</kp>
+                  <kd>100</kd>
+                  <max_vel>100</max_vel>
+                  <min_depth>0.001</min_depth>
+                </ode>
+              </contact>
+              <friction>
+                <torsional>
+                  <coefficient>1</coefficient>
+                  <use_patch_radius>0</use_patch_radius>
+                  <surface_radius>0.01</surface_radius>
+                </torsional>
+              </friction>
+            </surface>
+          </collision>
+          <visual name='visual'>
+            <geometry>
+              <sphere>
+                <radius>0.025</radius>
+              </sphere>
+            </geometry>
+          </visual>
+          <velocity_decay>
+            <linear>0</linear>
+            <angular>0.005</angular>
+          </velocity_decay>
+        </link>
+        <pose frame=''>0 0.75 0 0 -0 0</pose>
+      </model>
+      <model name='ball_bearing_16'>
+        <link name='link'>
+          <pose frame=''>0 0 0.003 0 -0 0</pose>
+          <inertial>
+            <mass>1.1e-07</mass>
+            <inertia>
+              <ixx>3.96e-09</ixx>
+              <ixy>0</ixy>
+              <ixz>0</ixz>
+              <iyy>3.96e-09</iyy>
+              <iyz>0</iyz>
+              <izz>3.96e-09</izz>
+            </inertia>
+          </inertial>
+          <collision name='collision'>
+            <geometry>
+              <sphere>
+                <radius>0.025</radius>
+              </sphere>
+            </geometry>
+            <surface>
+              <contact>
+                <poissons_ratio>0.305</poissons_ratio>
+                <elastic_modulus>2e+11</elastic_modulus>
+                <ode>
+                  <kp>100000</kp>
+                  <kd>100</kd>
+                  <max_vel>100</max_vel>
+                  <min_depth>0.001</min_depth>
+                </ode>
+              </contact>
+              <friction>
+                <torsional>
+                  <coefficient>1</coefficient>
+                  <use_patch_radius>0</use_patch_radius>
+                  <surface_radius>0.01</surface_radius>
+                </torsional>
+              </friction>
+            </surface>
+          </collision>
+          <visual name='visual'>
+            <geometry>
+              <sphere>
+                <radius>0.025</radius>
+              </sphere>
+            </geometry>
+          </visual>
+          <velocity_decay>
+            <linear>0</linear>
+            <angular>0.005</angular>
+          </velocity_decay>
+        </link>
+        <pose frame=''>0 0.8 0 0 -0 0</pose>
+      </model>
+      <model name='ball_bearing_17'>
+        <link name='link'>
+          <pose frame=''>0 0 0.003 0 -0 0</pose>
+          <inertial>
+            <mass>1.1e-07</mass>
+            <inertia>
+              <ixx>3.96e-09</ixx>
+              <ixy>0</ixy>
+              <ixz>0</ixz>
+              <iyy>3.96e-09</iyy>
+              <iyz>0</iyz>
+              <izz>3.96e-09</izz>
+            </inertia>
+          </inertial>
+          <collision name='collision'>
+            <geometry>
+              <sphere>
+                <radius>0.025</radius>
+              </sphere>
+            </geometry>
+            <surface>
+              <contact>
+                <poissons_ratio>0.305</poissons_ratio>
+                <elastic_modulus>2e+11</elastic_modulus>
+                <ode>
+                  <kp>100000</kp>
+                  <kd>100</kd>
+                  <max_vel>100</max_vel>
+                  <min_depth>0.001</min_depth>
+                </ode>
+              </contact>
+              <friction>
+                <torsional>
+                  <coefficient>1</coefficient>
+                  <use_patch_radius>0</use_patch_radius>
+                  <surface_radius>0.01</surface_radius>
+                </torsional>
+              </friction>
+            </surface>
+          </collision>
+          <visual name='visual'>
+            <geometry>
+              <sphere>
+                <radius>0.025</radius>
+              </sphere>
+            </geometry>
+          </visual>
+          <velocity_decay>
+            <linear>0</linear>
+            <angular>0.005</angular>
+          </velocity_decay>
+        </link>
+        <pose frame=''>0 0.85 0 0 -0 0</pose>
+      </model>
+      <model name='ball_bearing_18'>
+        <link name='link'>
+          <pose frame=''>0 0 0.003 0 -0 0</pose>
+          <inertial>
+            <mass>1.1e-07</mass>
+            <inertia>
+              <ixx>3.96e-09</ixx>
+              <ixy>0</ixy>
+              <ixz>0</ixz>
+              <iyy>3.96e-09</iyy>
+              <iyz>0</iyz>
+              <izz>3.96e-09</izz>
+            </inertia>
+          </inertial>
+          <collision name='collision'>
+            <geometry>
+              <sphere>
+                <radius>0.025</radius>
+              </sphere>
+            </geometry>
+            <surface>
+              <contact>
+                <poissons_ratio>0.305</poissons_ratio>
+                <elastic_modulus>2e+11</elastic_modulus>
+                <ode>
+                  <kp>100000</kp>
+                  <kd>100</kd>
+                  <max_vel>100</max_vel>
+                  <min_depth>0.001</min_depth>
+                </ode>
+              </contact>
+              <friction>
+                <torsional>
+                  <coefficient>1</coefficient>
+                  <use_patch_radius>0</use_patch_radius>
+                  <surface_radius>0.01</surface_radius>
+                </torsional>
+              </friction>
+            </surface>
+          </collision>
+          <visual name='visual'>
+            <geometry>
+              <sphere>
+                <radius>0.025</radius>
+              </sphere>
+            </geometry>
+          </visual>
+          <velocity_decay>
+            <linear>0</linear>
+            <angular>0.005</angular>
+          </velocity_decay>
+        </link>
+        <pose frame=''>0 0.9 0 0 -0 0</pose>
+      </model>
+      <model name='ball_bearing_19'>
+        <link name='link'>
+          <pose frame=''>0 0 0.003 0 -0 0</pose>
+          <inertial>
+            <mass>1.1e-07</mass>
+            <inertia>
+              <ixx>3.96e-09</ixx>
+              <ixy>0</ixy>
+              <ixz>0</ixz>
+              <iyy>3.96e-09</iyy>
+              <iyz>0</iyz>
+              <izz>3.96e-09</izz>
+            </inertia>
+          </inertial>
+          <collision name='collision'>
+            <geometry>
+              <sphere>
+                <radius>0.025</radius>
+              </sphere>
+            </geometry>
+            <surface>
+              <contact>
+                <poissons_ratio>0.305</poissons_ratio>
+                <elastic_modulus>2e+11</elastic_modulus>
+                <ode>
+                  <kp>100000</kp>
+                  <kd>100</kd>
+                  <max_vel>100</max_vel>
+                  <min_depth>0.001</min_depth>
+                </ode>
+              </contact>
+              <friction>
+                <torsional>
+                  <coefficient>1</coefficient>
+                  <use_patch_radius>0</use_patch_radius>
+                  <surface_radius>0.01</surface_radius>
+                </torsional>
+              </friction>
+            </surface>
+          </collision>
+          <visual name='visual'>
+            <geometry>
+              <sphere>
+                <radius>0.025</radius>
+              </sphere>
+            </geometry>
+          </visual>
+          <velocity_decay>
+            <linear>0</linear>
+            <angular>0.005</angular>
+          </velocity_decay>
+        </link>
+        <pose frame=''>0 0.95 0 0 -0 0</pose>
+      </model>
+      <model name='ball_bearing_20'>
+        <link name='link'>
+          <pose frame=''>0 0 0.003 0 -0 0</pose>
+          <inertial>
+            <mass>1.1e-07</mass>
+            <inertia>
+              <ixx>3.96e-09</ixx>
+              <ixy>0</ixy>
+              <ixz>0</ixz>
+              <iyy>3.96e-09</iyy>
+              <iyz>0</iyz>
+              <izz>3.96e-09</izz>
+            </inertia>
+          </inertial>
+          <collision name='collision'>
+            <geometry>
+              <sphere>
+                <radius>0.025</radius>
+              </sphere>
+            </geometry>
+            <surface>
+              <contact>
+                <poissons_ratio>0.305</poissons_ratio>
+                <elastic_modulus>2e+11</elastic_modulus>
+                <ode>
+                  <kp>100000</kp>
+                  <kd>100</kd>
+                  <max_vel>100</max_vel>
+                  <min_depth>0.001</min_depth>
+                </ode>
+              </contact>
+              <friction>
+                <torsional>
+                  <coefficient>1</coefficient>
+                  <use_patch_radius>0</use_patch_radius>
+                  <surface_radius>0.01</surface_radius>
+                </torsional>
+              </friction>
+            </surface>
+          </collision>
+          <visual name='visual'>
+            <geometry>
+              <sphere>
+                <radius>0.025</radius>
+              </sphere>
+            </geometry>
+          </visual>
+          <velocity_decay>
+            <linear>0</linear>
+            <angular>0.005</angular>
+          </velocity_decay>
+        </link>
+        <pose frame=''>0 1 0 0 -0 0</pose>
+      </model>
+      <model name='ball_bearing_21'>
+        <link name='link'>
+          <pose frame=''>0 0 0.003 0 -0 0</pose>
+          <inertial>
+            <mass>1.1e-07</mass>
+            <inertia>
+              <ixx>3.96e-09</ixx>
+              <ixy>0</ixy>
+              <ixz>0</ixz>
+              <iyy>3.96e-09</iyy>
+              <iyz>0</iyz>
+              <izz>3.96e-09</izz>
+            </inertia>
+          </inertial>
+          <collision name='collision'>
+            <geometry>
+              <sphere>
+                <radius>0.025</radius>
+              </sphere>
+            </geometry>
+            <surface>
+              <contact>
+                <poissons_ratio>0.305</poissons_ratio>
+                <elastic_modulus>2e+11</elastic_modulus>
+                <ode>
+                  <kp>100000</kp>
+                  <kd>100</kd>
+                  <max_vel>100</max_vel>
+                  <min_depth>0.001</min_depth>
+                </ode>
+              </contact>
+              <friction>
+                <torsional>
+                  <coefficient>1</coefficient>
+                  <use_patch_radius>0</use_patch_radius>
+                  <surface_radius>0.01</surface_radius>
+                </torsional>
+              </friction>
+            </surface>
+          </collision>
+          <visual name='visual'>
+            <geometry>
+              <sphere>
+                <radius>0.025</radius>
+              </sphere>
+            </geometry>
+          </visual>
+          <velocity_decay>
+            <linear>0</linear>
+            <angular>0.005</angular>
+          </velocity_decay>
+        </link>
+        <pose frame=''>0 1.05 0 0 -0 0</pose>
+      </model>
+      <model name='ball_bearing_22'>
+        <link name='link'>
+          <pose frame=''>0 0 0.003 0 -0 0</pose>
+          <inertial>
+            <mass>1.1e-07</mass>
+            <inertia>
+              <ixx>3.96e-09</ixx>
+              <ixy>0</ixy>
+              <ixz>0</ixz>
+              <iyy>3.96e-09</iyy>
+              <iyz>0</iyz>
+              <izz>3.96e-09</izz>
+            </inertia>
+          </inertial>
+          <collision name='collision'>
+            <geometry>
+              <sphere>
+                <radius>0.025</radius>
+              </sphere>
+            </geometry>
+            <surface>
+              <contact>
+                <poissons_ratio>0.305</poissons_ratio>
+                <elastic_modulus>2e+11</elastic_modulus>
+                <ode>
+                  <kp>100000</kp>
+                  <kd>100</kd>
+                  <max_vel>100</max_vel>
+                  <min_depth>0.001</min_depth>
+                </ode>
+              </contact>
+              <friction>
+                <torsional>
+                  <coefficient>1</coefficient>
+                  <use_patch_radius>0</use_patch_radius>
+                  <surface_radius>0.01</surface_radius>
+                </torsional>
+              </friction>
+            </surface>
+          </collision>
+          <visual name='visual'>
+            <geometry>
+              <sphere>
+                <radius>0.025</radius>
+              </sphere>
+            </geometry>
+          </visual>
+          <velocity_decay>
+            <linear>0</linear>
+            <angular>0.005</angular>
+          </velocity_decay>
+        </link>
+        <pose frame=''>0 1.1 0 0 -0 0</pose>
+      </model>
+      <model name='ball_bearing_23'>
+        <link name='link'>
+          <pose frame=''>0 0 0.003 0 -0 0</pose>
+          <inertial>
+            <mass>1.1e-07</mass>
+            <inertia>
+              <ixx>3.96e-09</ixx>
+              <ixy>0</ixy>
+              <ixz>0</ixz>
+              <iyy>3.96e-09</iyy>
+              <iyz>0</iyz>
+              <izz>3.96e-09</izz>
+            </inertia>
+          </inertial>
+          <collision name='collision'>
+            <geometry>
+              <sphere>
+                <radius>0.025</radius>
+              </sphere>
+            </geometry>
+            <surface>
+              <contact>
+                <poissons_ratio>0.305</poissons_ratio>
+                <elastic_modulus>2e+11</elastic_modulus>
+                <ode>
+                  <kp>100000</kp>
+                  <kd>100</kd>
+                  <max_vel>100</max_vel>
+                  <min_depth>0.001</min_depth>
+                </ode>
+              </contact>
+              <friction>
+                <torsional>
+                  <coefficient>1</coefficient>
+                  <use_patch_radius>0</use_patch_radius>
+                  <surface_radius>0.01</surface_radius>
+                </torsional>
+              </friction>
+            </surface>
+          </collision>
+          <visual name='visual'>
+            <geometry>
+              <sphere>
+                <radius>0.025</radius>
+              </sphere>
+            </geometry>
+          </visual>
+          <velocity_decay>
+            <linear>0</linear>
+            <angular>0.005</angular>
+          </velocity_decay>
+        </link>
+        <pose frame=''>0 1.15 0 0 -0 0</pose>
+      </model>
+      <model name='ball_bearing_24'>
+        <link name='link'>
+          <pose frame=''>0 0 0.003 0 -0 0</pose>
+          <inertial>
+            <mass>1.1e-07</mass>
+            <inertia>
+              <ixx>3.96e-09</ixx>
+              <ixy>0</ixy>
+              <ixz>0</ixz>
+              <iyy>3.96e-09</iyy>
+              <iyz>0</iyz>
+              <izz>3.96e-09</izz>
+            </inertia>
+          </inertial>
+          <collision name='collision'>
+            <geometry>
+              <sphere>
+                <radius>0.025</radius>
+              </sphere>
+            </geometry>
+            <surface>
+              <contact>
+                <poissons_ratio>0.305</poissons_ratio>
+                <elastic_modulus>2e+11</elastic_modulus>
+                <ode>
+                  <kp>100000</kp>
+                  <kd>100</kd>
+                  <max_vel>100</max_vel>
+                  <min_depth>0.001</min_depth>
+                </ode>
+              </contact>
+              <friction>
+                <torsional>
+                  <coefficient>1</coefficient>
+                  <use_patch_radius>0</use_patch_radius>
+                  <surface_radius>0.01</surface_radius>
+                </torsional>
+              </friction>
+            </surface>
+          </collision>
+          <visual name='visual'>
+            <geometry>
+              <sphere>
+                <radius>0.025</radius>
+              </sphere>
+            </geometry>
+          </visual>
+          <velocity_decay>
+            <linear>0</linear>
+            <angular>0.005</angular>
+          </velocity_decay>
+        </link>
+        <pose frame=''>0 1.2 0 0 -0 0</pose>
+      </model>
+      <model name='ball_bearing_25'>
+        <link name='link'>
+          <pose frame=''>0 0 0.003 0 -0 0</pose>
+          <inertial>
+            <mass>1.1e-07</mass>
+            <inertia>
+              <ixx>3.96e-09</ixx>
+              <ixy>0</ixy>
+              <ixz>0</ixz>
+              <iyy>3.96e-09</iyy>
+              <iyz>0</iyz>
+              <izz>3.96e-09</izz>
+            </inertia>
+          </inertial>
+          <collision name='collision'>
+            <geometry>
+              <sphere>
+                <radius>0.025</radius>
+              </sphere>
+            </geometry>
+            <surface>
+              <contact>
+                <poissons_ratio>0.305</poissons_ratio>
+                <elastic_modulus>2e+11</elastic_modulus>
+                <ode>
+                  <kp>100000</kp>
+                  <kd>100</kd>
+                  <max_vel>100</max_vel>
+                  <min_depth>0.001</min_depth>
+                </ode>
+              </contact>
+              <friction>
+                <torsional>
+                  <coefficient>1</coefficient>
+                  <use_patch_radius>0</use_patch_radius>
+                  <surface_radius>0.01</surface_radius>
+                </torsional>
+              </friction>
+            </surface>
+          </collision>
+          <visual name='visual'>
+            <geometry>
+              <sphere>
+                <radius>0.025</radius>
+              </sphere>
+            </geometry>
+          </visual>
+          <velocity_decay>
+            <linear>0</linear>
+            <angular>0.005</angular>
+          </velocity_decay>
+        </link>
+        <pose frame=''>0 1.25 0 0 -0 0</pose>
+      </model>
+      <model name='ball_bearing_26'>
+        <link name='link'>
+          <pose frame=''>0 0 0.003 0 -0 0</pose>
+          <inertial>
+            <mass>1.1e-07</mass>
+            <inertia>
+              <ixx>3.96e-09</ixx>
+              <ixy>0</ixy>
+              <ixz>0</ixz>
+              <iyy>3.96e-09</iyy>
+              <iyz>0</iyz>
+              <izz>3.96e-09</izz>
+            </inertia>
+          </inertial>
+          <collision name='collision'>
+            <geometry>
+              <sphere>
+                <radius>0.025</radius>
+              </sphere>
+            </geometry>
+            <surface>
+              <contact>
+                <poissons_ratio>0.305</poissons_ratio>
+                <elastic_modulus>2e+11</elastic_modulus>
+                <ode>
+                  <kp>100000</kp>
+                  <kd>100</kd>
+                  <max_vel>100</max_vel>
+                  <min_depth>0.001</min_depth>
+                </ode>
+              </contact>
+              <friction>
+                <torsional>
+                  <coefficient>1</coefficient>
+                  <use_patch_radius>0</use_patch_radius>
+                  <surface_radius>0.01</surface_radius>
+                </torsional>
+              </friction>
+            </surface>
+          </collision>
+          <visual name='visual'>
+            <geometry>
+              <sphere>
+                <radius>0.025</radius>
+              </sphere>
+            </geometry>
+          </visual>
+          <velocity_decay>
+            <linear>0</linear>
+            <angular>0.005</angular>
+          </velocity_decay>
+        </link>
+        <pose frame=''>0 1.3 0 0 -0 0</pose>
+      </model>
+      <model name='ball_bearing_27'>
+        <link name='link'>
+          <pose frame=''>0 0 0.003 0 -0 0</pose>
+          <inertial>
+            <mass>1.1e-07</mass>
+            <inertia>
+              <ixx>3.96e-09</ixx>
+              <ixy>0</ixy>
+              <ixz>0</ixz>
+              <iyy>3.96e-09</iyy>
+              <iyz>0</iyz>
+              <izz>3.96e-09</izz>
+            </inertia>
+          </inertial>
+          <collision name='collision'>
+            <geometry>
+              <sphere>
+                <radius>0.025</radius>
+              </sphere>
+            </geometry>
+            <surface>
+              <contact>
+                <poissons_ratio>0.305</poissons_ratio>
+                <elastic_modulus>2e+11</elastic_modulus>
+                <ode>
+                  <kp>100000</kp>
+                  <kd>100</kd>
+                  <max_vel>100</max_vel>
+                  <min_depth>0.001</min_depth>
+                </ode>
+              </contact>
+              <friction>
+                <torsional>
+                  <coefficient>1</coefficient>
+                  <use_patch_radius>0</use_patch_radius>
+                  <surface_radius>0.01</surface_radius>
+                </torsional>
+              </friction>
+            </surface>
+          </collision>
+          <visual name='visual'>
+            <geometry>
+              <sphere>
+                <radius>0.025</radius>
+              </sphere>
+            </geometry>
+          </visual>
+          <velocity_decay>
+            <linear>0</linear>
+            <angular>0.005</angular>
+          </velocity_decay>
+        </link>
+        <pose frame=''>0 1.35 0 0 -0 0</pose>
+      </model>
+      <model name='ball_bearing_28'>
+        <link name='link'>
+          <pose frame=''>0 0 0.003 0 -0 0</pose>
+          <inertial>
+            <mass>1.1e-07</mass>
+            <inertia>
+              <ixx>3.96e-09</ixx>
+              <ixy>0</ixy>
+              <ixz>0</ixz>
+              <iyy>3.96e-09</iyy>
+              <iyz>0</iyz>
+              <izz>3.96e-09</izz>
+            </inertia>
+          </inertial>
+          <collision name='collision'>
+            <geometry>
+              <sphere>
+                <radius>0.025</radius>
+              </sphere>
+            </geometry>
+            <surface>
+              <contact>
+                <poissons_ratio>0.305</poissons_ratio>
+                <elastic_modulus>2e+11</elastic_modulus>
+                <ode>
+                  <kp>100000</kp>
+                  <kd>100</kd>
+                  <max_vel>100</max_vel>
+                  <min_depth>0.001</min_depth>
+                </ode>
+              </contact>
+              <friction>
+                <torsional>
+                  <coefficient>1</coefficient>
+                  <use_patch_radius>0</use_patch_radius>
+                  <surface_radius>0.01</surface_radius>
+                </torsional>
+              </friction>
+            </surface>
+          </collision>
+          <visual name='visual'>
+            <geometry>
+              <sphere>
+                <radius>0.025</radius>
+              </sphere>
+            </geometry>
+          </visual>
+          <velocity_decay>
+            <linear>0</linear>
+            <angular>0.005</angular>
+          </velocity_decay>
+        </link>
+        <pose frame=''>0 1.4 0 0 -0 0</pose>
+      </model>
+      <model name='ball_bearing_29'>
+        <link name='link'>
+          <pose frame=''>0 0 0.003 0 -0 0</pose>
+          <inertial>
+            <mass>1.1e-07</mass>
+            <inertia>
+              <ixx>3.96e-09</ixx>
+              <ixy>0</ixy>
+              <ixz>0</ixz>
+              <iyy>3.96e-09</iyy>
+              <iyz>0</iyz>
+              <izz>3.96e-09</izz>
+            </inertia>
+          </inertial>
+          <collision name='collision'>
+            <geometry>
+              <sphere>
+                <radius>0.025</radius>
+              </sphere>
+            </geometry>
+            <surface>
+              <contact>
+                <poissons_ratio>0.305</poissons_ratio>
+                <elastic_modulus>2e+11</elastic_modulus>
+                <ode>
+                  <kp>100000</kp>
+                  <kd>100</kd>
+                  <max_vel>100</max_vel>
+                  <min_depth>0.001</min_depth>
+                </ode>
+              </contact>
+              <friction>
+                <torsional>
+                  <coefficient>1</coefficient>
+                  <use_patch_radius>0</use_patch_radius>
+                  <surface_radius>0.01</surface_radius>
+                </torsional>
+              </friction>
+            </surface>
+          </collision>
+          <visual name='visual'>
+            <geometry>
+              <sphere>
+                <radius>0.025</radius>
+              </sphere>
+            </geometry>
+          </visual>
+          <velocity_decay>
+            <linear>0</linear>
+            <angular>0.005</angular>
+          </velocity_decay>
+        </link>
+        <pose frame=''>0 1.45 0 0 -0 0</pose>
+      </model>
+      <model name='ball_bearing_30'>
+        <link name='link'>
+          <pose frame=''>0 0 0.003 0 -0 0</pose>
+          <inertial>
+            <mass>1.1e-07</mass>
+            <inertia>
+              <ixx>3.96e-09</ixx>
+              <ixy>0</ixy>
+              <ixz>0</ixz>
+              <iyy>3.96e-09</iyy>
+              <iyz>0</iyz>
+              <izz>3.96e-09</izz>
+            </inertia>
+          </inertial>
+          <collision name='collision'>
+            <geometry>
+              <sphere>
+                <radius>0.025</radius>
+              </sphere>
+            </geometry>
+            <surface>
+              <contact>
+                <poissons_ratio>0.305</poissons_ratio>
+                <elastic_modulus>2e+11</elastic_modulus>
+                <ode>
+                  <kp>100000</kp>
+                  <kd>100</kd>
+                  <max_vel>100</max_vel>
+                  <min_depth>0.001</min_depth>
+                </ode>
+              </contact>
+              <friction>
+                <torsional>
+                  <coefficient>1</coefficient>
+                  <use_patch_radius>0</use_patch_radius>
+                  <surface_radius>0.01</surface_radius>
+                </torsional>
+              </friction>
+            </surface>
+          </collision>
+          <visual name='visual'>
+            <geometry>
+              <sphere>
+                <radius>0.025</radius>
+              </sphere>
+            </geometry>
+          </visual>
+          <velocity_decay>
+            <linear>0</linear>
+            <angular>0.005</angular>
+          </velocity_decay>
+        </link>
+        <pose frame=''>0 1.5 0 0 -0 0</pose>
+      </model>
+      <model name='ball_bearing_31'>
+        <link name='link'>
+          <pose frame=''>0 0 0.003 0 -0 0</pose>
+          <inertial>
+            <mass>1.1e-07</mass>
+            <inertia>
+              <ixx>3.96e-09</ixx>
+              <ixy>0</ixy>
+              <ixz>0</ixz>
+              <iyy>3.96e-09</iyy>
+              <iyz>0</iyz>
+              <izz>3.96e-09</izz>
+            </inertia>
+          </inertial>
+          <collision name='collision'>
+            <geometry>
+              <sphere>
+                <radius>0.025</radius>
+              </sphere>
+            </geometry>
+            <surface>
+              <contact>
+                <poissons_ratio>0.305</poissons_ratio>
+                <elastic_modulus>2e+11</elastic_modulus>
+                <ode>
+                  <kp>100000</kp>
+                  <kd>100</kd>
+                  <max_vel>100</max_vel>
+                  <min_depth>0.001</min_depth>
+                </ode>
+              </contact>
+              <friction>
+                <torsional>
+                  <coefficient>1</coefficient>
+                  <use_patch_radius>0</use_patch_radius>
+                  <surface_radius>0.01</surface_radius>
+                </torsional>
+              </friction>
+            </surface>
+          </collision>
+          <visual name='visual'>
+            <geometry>
+              <sphere>
+                <radius>0.025</radius>
+              </sphere>
+            </geometry>
+          </visual>
+          <velocity_decay>
+            <linear>0</linear>
+            <angular>0.005</angular>
+          </velocity_decay>
+        </link>
+        <pose frame=''>0 1.55 0 0 -0 0</pose>
+      </model>
+      <model name='ball_bearing_32'>
+        <link name='link'>
+          <pose frame=''>0 0 0.003 0 -0 0</pose>
+          <inertial>
+            <mass>1.1e-07</mass>
+            <inertia>
+              <ixx>3.96e-09</ixx>
+              <ixy>0</ixy>
+              <ixz>0</ixz>
+              <iyy>3.96e-09</iyy>
+              <iyz>0</iyz>
+              <izz>3.96e-09</izz>
+            </inertia>
+          </inertial>
+          <collision name='collision'>
+            <geometry>
+              <sphere>
+                <radius>0.025</radius>
+              </sphere>
+            </geometry>
+            <surface>
+              <contact>
+                <poissons_ratio>0.305</poissons_ratio>
+                <elastic_modulus>2e+11</elastic_modulus>
+                <ode>
+                  <kp>100000</kp>
+                  <kd>100</kd>
+                  <max_vel>100</max_vel>
+                  <min_depth>0.001</min_depth>
+                </ode>
+              </contact>
+              <friction>
+                <torsional>
+                  <coefficient>1</coefficient>
+                  <use_patch_radius>0</use_patch_radius>
+                  <surface_radius>0.01</surface_radius>
+                </torsional>
+              </friction>
+            </surface>
+          </collision>
+          <visual name='visual'>
+            <geometry>
+              <sphere>
+                <radius>0.025</radius>
+              </sphere>
+            </geometry>
+          </visual>
+          <velocity_decay>
+            <linear>0</linear>
+            <angular>0.005</angular>
+          </velocity_decay>
+        </link>
+        <pose frame=''>0 1.6 0 0 -0 0</pose>
+      </model>
+      <model name='ball_bearing_33'>
+        <link name='link'>
+          <pose frame=''>0 0 0.003 0 -0 0</pose>
+          <inertial>
+            <mass>1.1e-07</mass>
+            <inertia>
+              <ixx>3.96e-09</ixx>
+              <ixy>0</ixy>
+              <ixz>0</ixz>
+              <iyy>3.96e-09</iyy>
+              <iyz>0</iyz>
+              <izz>3.96e-09</izz>
+            </inertia>
+          </inertial>
+          <collision name='collision'>
+            <geometry>
+              <sphere>
+                <radius>0.025</radius>
+              </sphere>
+            </geometry>
+            <surface>
+              <contact>
+                <poissons_ratio>0.305</poissons_ratio>
+                <elastic_modulus>2e+11</elastic_modulus>
+                <ode>
+                  <kp>100000</kp>
+                  <kd>100</kd>
+                  <max_vel>100</max_vel>
+                  <min_depth>0.001</min_depth>
+                </ode>
+              </contact>
+              <friction>
+                <torsional>
+                  <coefficient>1</coefficient>
+                  <use_patch_radius>0</use_patch_radius>
+                  <surface_radius>0.01</surface_radius>
+                </torsional>
+              </friction>
+            </surface>
+          </collision>
+          <visual name='visual'>
+            <geometry>
+              <sphere>
+                <radius>0.025</radius>
+              </sphere>
+            </geometry>
+          </visual>
+          <velocity_decay>
+            <linear>0</linear>
+            <angular>0.005</angular>
+          </velocity_decay>
+        </link>
+        <pose frame=''>0 1.65 0 0 -0 0</pose>
+      </model>
+      <model name='ball_bearing_34'>
+        <link name='link'>
+          <pose frame=''>0 0 0.003 0 -0 0</pose>
+          <inertial>
+            <mass>1.1e-07</mass>
+            <inertia>
+              <ixx>3.96e-09</ixx>
+              <ixy>0</ixy>
+              <ixz>0</ixz>
+              <iyy>3.96e-09</iyy>
+              <iyz>0</iyz>
+              <izz>3.96e-09</izz>
+            </inertia>
+          </inertial>
+          <collision name='collision'>
+            <geometry>
+              <sphere>
+                <radius>0.025</radius>
+              </sphere>
+            </geometry>
+            <surface>
+              <contact>
+                <poissons_ratio>0.305</poissons_ratio>
+                <elastic_modulus>2e+11</elastic_modulus>
+                <ode>
+                  <kp>100000</kp>
+                  <kd>100</kd>
+                  <max_vel>100</max_vel>
+                  <min_depth>0.001</min_depth>
+                </ode>
+              </contact>
+              <friction>
+                <torsional>
+                  <coefficient>1</coefficient>
+                  <use_patch_radius>0</use_patch_radius>
+                  <surface_radius>0.01</surface_radius>
+                </torsional>
+              </friction>
+            </surface>
+          </collision>
+          <visual name='visual'>
+            <geometry>
+              <sphere>
+                <radius>0.025</radius>
+              </sphere>
+            </geometry>
+          </visual>
+          <velocity_decay>
+            <linear>0</linear>
+            <angular>0.005</angular>
+          </velocity_decay>
+        </link>
+        <pose frame=''>0 1.7 0 0 -0 0</pose>
+      </model>
+      <model name='ball_bearing_35'>
+        <link name='link'>
+          <pose frame=''>0 0 0.003 0 -0 0</pose>
+          <inertial>
+            <mass>1.1e-07</mass>
+            <inertia>
+              <ixx>3.96e-09</ixx>
+              <ixy>0</ixy>
+              <ixz>0</ixz>
+              <iyy>3.96e-09</iyy>
+              <iyz>0</iyz>
+              <izz>3.96e-09</izz>
+            </inertia>
+          </inertial>
+          <collision name='collision'>
+            <geometry>
+              <sphere>
+                <radius>0.025</radius>
+              </sphere>
+            </geometry>
+            <surface>
+              <contact>
+                <poissons_ratio>0.305</poissons_ratio>
+                <elastic_modulus>2e+11</elastic_modulus>
+                <ode>
+                  <kp>100000</kp>
+                  <kd>100</kd>
+                  <max_vel>100</max_vel>
+                  <min_depth>0.001</min_depth>
+                </ode>
+              </contact>
+              <friction>
+                <torsional>
+                  <coefficient>1</coefficient>
+                  <use_patch_radius>0</use_patch_radius>
+                  <surface_radius>0.01</surface_radius>
+                </torsional>
+              </friction>
+            </surface>
+          </collision>
+          <visual name='visual'>
+            <geometry>
+              <sphere>
+                <radius>0.025</radius>
+              </sphere>
+            </geometry>
+          </visual>
+          <velocity_decay>
+            <linear>0</linear>
+            <angular>0.005</angular>
+          </velocity_decay>
+        </link>
+        <pose frame=''>0 1.75 0 0 -0 0</pose>
+      </model>
+      <model name='ball_bearing_36'>
+        <link name='link'>
+          <pose frame=''>0 0 0.003 0 -0 0</pose>
+          <inertial>
+            <mass>1.1e-07</mass>
+            <inertia>
+              <ixx>3.96e-09</ixx>
+              <ixy>0</ixy>
+              <ixz>0</ixz>
+              <iyy>3.96e-09</iyy>
+              <iyz>0</iyz>
+              <izz>3.96e-09</izz>
+            </inertia>
+          </inertial>
+          <collision name='collision'>
+            <geometry>
+              <sphere>
+                <radius>0.025</radius>
+              </sphere>
+            </geometry>
+            <surface>
+              <contact>
+                <poissons_ratio>0.305</poissons_ratio>
+                <elastic_modulus>2e+11</elastic_modulus>
+                <ode>
+                  <kp>100000</kp>
+                  <kd>100</kd>
+                  <max_vel>100</max_vel>
+                  <min_depth>0.001</min_depth>
+                </ode>
+              </contact>
+              <friction>
+                <torsional>
+                  <coefficient>1</coefficient>
+                  <use_patch_radius>0</use_patch_radius>
+                  <surface_radius>0.01</surface_radius>
+                </torsional>
+              </friction>
+            </surface>
+          </collision>
+          <visual name='visual'>
+            <geometry>
+              <sphere>
+                <radius>0.025</radius>
+              </sphere>
+            </geometry>
+          </visual>
+          <velocity_decay>
+            <linear>0</linear>
+            <angular>0.005</angular>
+          </velocity_decay>
+        </link>
+        <pose frame=''>0 1.8 0 0 -0 0</pose>
+      </model>
+      <model name='ball_bearing_37'>
+        <link name='link'>
+          <pose frame=''>0 0 0.003 0 -0 0</pose>
+          <inertial>
+            <mass>1.1e-07</mass>
+            <inertia>
+              <ixx>3.96e-09</ixx>
+              <ixy>0</ixy>
+              <ixz>0</ixz>
+              <iyy>3.96e-09</iyy>
+              <iyz>0</iyz>
+              <izz>3.96e-09</izz>
+            </inertia>
+          </inertial>
+          <collision name='collision'>
+            <geometry>
+              <sphere>
+                <radius>0.025</radius>
+              </sphere>
+            </geometry>
+            <surface>
+              <contact>
+                <poissons_ratio>0.305</poissons_ratio>
+                <elastic_modulus>2e+11</elastic_modulus>
+                <ode>
+                  <kp>100000</kp>
+                  <kd>100</kd>
+                  <max_vel>100</max_vel>
+                  <min_depth>0.001</min_depth>
+                </ode>
+              </contact>
+              <friction>
+                <torsional>
+                  <coefficient>1</coefficient>
+                  <use_patch_radius>0</use_patch_radius>
+                  <surface_radius>0.01</surface_radius>
+                </torsional>
+              </friction>
+            </surface>
+          </collision>
+          <visual name='visual'>
+            <geometry>
+              <sphere>
+                <radius>0.025</radius>
+              </sphere>
+            </geometry>
+          </visual>
+          <velocity_decay>
+            <linear>0</linear>
+            <angular>0.005</angular>
+          </velocity_decay>
+        </link>
+        <pose frame=''>0 1.85 0 0 -0 0</pose>
+      </model>
+      <model name='ball_bearing_38'>
+        <link name='link'>
+          <pose frame=''>0 0 0.003 0 -0 0</pose>
+          <inertial>
+            <mass>1.1e-07</mass>
+            <inertia>
+              <ixx>3.96e-09</ixx>
+              <ixy>0</ixy>
+              <ixz>0</ixz>
+              <iyy>3.96e-09</iyy>
+              <iyz>0</iyz>
+              <izz>3.96e-09</izz>
+            </inertia>
+          </inertial>
+          <collision name='collision'>
+            <geometry>
+              <sphere>
+                <radius>0.025</radius>
+              </sphere>
+            </geometry>
+            <surface>
+              <contact>
+                <poissons_ratio>0.305</poissons_ratio>
+                <elastic_modulus>2e+11</elastic_modulus>
+                <ode>
+                  <kp>100000</kp>
+                  <kd>100</kd>
+                  <max_vel>100</max_vel>
+                  <min_depth>0.001</min_depth>
+                </ode>
+              </contact>
+              <friction>
+                <torsional>
+                  <coefficient>1</coefficient>
+                  <use_patch_radius>0</use_patch_radius>
+                  <surface_radius>0.01</surface_radius>
+                </torsional>
+              </friction>
+            </surface>
+          </collision>
+          <visual name='visual'>
+            <geometry>
+              <sphere>
+                <radius>0.025</radius>
+              </sphere>
+            </geometry>
+          </visual>
+          <velocity_decay>
+            <linear>0</linear>
+            <angular>0.005</angular>
+          </velocity_decay>
+        </link>
+        <pose frame=''>0 1.9 0 0 -0 0</pose>
+      </model>
+      <model name='ball_bearing_39'>
+        <link name='link'>
+          <pose frame=''>0 0 0.003 0 -0 0</pose>
+          <inertial>
+            <mass>1.1e-07</mass>
+            <inertia>
+              <ixx>3.96e-09</ixx>
+              <ixy>0</ixy>
+              <ixz>0</ixz>
+              <iyy>3.96e-09</iyy>
+              <iyz>0</iyz>
+              <izz>3.96e-09</izz>
+            </inertia>
+          </inertial>
+          <collision name='collision'>
+            <geometry>
+              <sphere>
+                <radius>0.025</radius>
+              </sphere>
+            </geometry>
+            <surface>
+              <contact>
+                <poissons_ratio>0.305</poissons_ratio>
+                <elastic_modulus>2e+11</elastic_modulus>
+                <ode>
+                  <kp>100000</kp>
+                  <kd>100</kd>
+                  <max_vel>100</max_vel>
+                  <min_depth>0.001</min_depth>
+                </ode>
+              </contact>
+              <friction>
+                <torsional>
+                  <coefficient>1</coefficient>
+                  <use_patch_radius>0</use_patch_radius>
+                  <surface_radius>0.01</surface_radius>
+                </torsional>
+              </friction>
+            </surface>
+          </collision>
+          <visual name='visual'>
+            <geometry>
+              <sphere>
+                <radius>0.025</radius>
+              </sphere>
+            </geometry>
+          </visual>
+          <velocity_decay>
+            <linear>0</linear>
+            <angular>0.005</angular>
+          </velocity_decay>
+        </link>
+        <pose frame=''>0 1.95 0 0 -0 0</pose>
+      </model>
+      <model name='ball_bearing_40'>
+        <link name='link'>
+          <pose frame=''>0 0 0.003 0 -0 0</pose>
+          <inertial>
+            <mass>1.1e-07</mass>
+            <inertia>
+              <ixx>3.96e-09</ixx>
+              <ixy>0</ixy>
+              <ixz>0</ixz>
+              <iyy>3.96e-09</iyy>
+              <iyz>0</iyz>
+              <izz>3.96e-09</izz>
+            </inertia>
+          </inertial>
+          <collision name='collision'>
+            <geometry>
+              <sphere>
+                <radius>0.025</radius>
+              </sphere>
+            </geometry>
+            <surface>
+              <contact>
+                <poissons_ratio>0.305</poissons_ratio>
+                <elastic_modulus>2e+11</elastic_modulus>
+                <ode>
+                  <kp>100000</kp>
+                  <kd>100</kd>
+                  <max_vel>100</max_vel>
+                  <min_depth>0.001</min_depth>
+                </ode>
+              </contact>
+              <friction>
+                <torsional>
+                  <coefficient>1</coefficient>
+                  <use_patch_radius>0</use_patch_radius>
+                  <surface_radius>0.01</surface_radius>
+                </torsional>
+              </friction>
+            </surface>
+          </collision>
+          <visual name='visual'>
+            <geometry>
+              <sphere>
+                <radius>0.025</radius>
+              </sphere>
+            </geometry>
+          </visual>
+          <velocity_decay>
+            <linear>0</linear>
+            <angular>0.005</angular>
+          </velocity_decay>
+        </link>
+        <pose frame=''>0 2 0 0 -0 0</pose>
+      </model>
+      <model name='ball_bearing_41'>
+        <link name='link'>
+          <pose frame=''>0 0 0.003 0 -0 0</pose>
+          <inertial>
+            <mass>1.1e-07</mass>
+            <inertia>
+              <ixx>3.96e-09</ixx>
+              <ixy>0</ixy>
+              <ixz>0</ixz>
+              <iyy>3.96e-09</iyy>
+              <iyz>0</iyz>
+              <izz>3.96e-09</izz>
+            </inertia>
+          </inertial>
+          <collision name='collision'>
+            <geometry>
+              <sphere>
+                <radius>0.025</radius>
+              </sphere>
+            </geometry>
+            <surface>
+              <contact>
+                <poissons_ratio>0.305</poissons_ratio>
+                <elastic_modulus>2e+11</elastic_modulus>
+                <ode>
+                  <kp>100000</kp>
+                  <kd>100</kd>
+                  <max_vel>100</max_vel>
+                  <min_depth>0.001</min_depth>
+                </ode>
+              </contact>
+              <friction>
+                <torsional>
+                  <coefficient>1</coefficient>
+                  <use_patch_radius>0</use_patch_radius>
+                  <surface_radius>0.01</surface_radius>
+                </torsional>
+              </friction>
+            </surface>
+          </collision>
+          <visual name='visual'>
+            <geometry>
+              <sphere>
+                <radius>0.025</radius>
+              </sphere>
+            </geometry>
+          </visual>
+          <velocity_decay>
+            <linear>0</linear>
+            <angular>0.005</angular>
+          </velocity_decay>
+        </link>
+        <pose frame=''>0 2.05 0 0 -0 0</pose>
+      </model>
+      <model name='ball_bearing_42'>
+        <link name='link'>
+          <pose frame=''>0 0 0.003 0 -0 0</pose>
+          <inertial>
+            <mass>1.1e-07</mass>
+            <inertia>
+              <ixx>3.96e-09</ixx>
+              <ixy>0</ixy>
+              <ixz>0</ixz>
+              <iyy>3.96e-09</iyy>
+              <iyz>0</iyz>
+              <izz>3.96e-09</izz>
+            </inertia>
+          </inertial>
+          <collision name='collision'>
+            <geometry>
+              <sphere>
+                <radius>0.025</radius>
+              </sphere>
+            </geometry>
+            <surface>
+              <contact>
+                <poissons_ratio>0.305</poissons_ratio>
+                <elastic_modulus>2e+11</elastic_modulus>
+                <ode>
+                  <kp>100000</kp>
+                  <kd>100</kd>
+                  <max_vel>100</max_vel>
+                  <min_depth>0.001</min_depth>
+                </ode>
+              </contact>
+              <friction>
+                <torsional>
+                  <coefficient>1</coefficient>
+                  <use_patch_radius>0</use_patch_radius>
+                  <surface_radius>0.01</surface_radius>
+                </torsional>
+              </friction>
+            </surface>
+          </collision>
+          <visual name='visual'>
+            <geometry>
+              <sphere>
+                <radius>0.025</radius>
+              </sphere>
+            </geometry>
+          </visual>
+          <velocity_decay>
+            <linear>0</linear>
+            <angular>0.005</angular>
+          </velocity_decay>
+        </link>
+        <pose frame=''>0 2.1 0 0 -0 0</pose>
+      </model>
+      <model name='ball_bearing_43'>
+        <link name='link'>
+          <pose frame=''>0 0 0.003 0 -0 0</pose>
+          <inertial>
+            <mass>1.1e-07</mass>
+            <inertia>
+              <ixx>3.96e-09</ixx>
+              <ixy>0</ixy>
+              <ixz>0</ixz>
+              <iyy>3.96e-09</iyy>
+              <iyz>0</iyz>
+              <izz>3.96e-09</izz>
+            </inertia>
+          </inertial>
+          <collision name='collision'>
+            <geometry>
+              <sphere>
+                <radius>0.025</radius>
+              </sphere>
+            </geometry>
+            <surface>
+              <contact>
+                <poissons_ratio>0.305</poissons_ratio>
+                <elastic_modulus>2e+11</elastic_modulus>
+                <ode>
+                  <kp>100000</kp>
+                  <kd>100</kd>
+                  <max_vel>100</max_vel>
+                  <min_depth>0.001</min_depth>
+                </ode>
+              </contact>
+              <friction>
+                <torsional>
+                  <coefficient>1</coefficient>
+                  <use_patch_radius>0</use_patch_radius>
+                  <surface_radius>0.01</surface_radius>
+                </torsional>
+              </friction>
+            </surface>
+          </collision>
+          <visual name='visual'>
+            <geometry>
+              <sphere>
+                <radius>0.025</radius>
+              </sphere>
+            </geometry>
+          </visual>
+          <velocity_decay>
+            <linear>0</linear>
+            <angular>0.005</angular>
+          </velocity_decay>
+        </link>
+        <pose frame=''>0 2.15 0 0 -0 0</pose>
+      </model>
+      <model name='ball_bearing_44'>
+        <link name='link'>
+          <pose frame=''>0 0 0.003 0 -0 0</pose>
+          <inertial>
+            <mass>1.1e-07</mass>
+            <inertia>
+              <ixx>3.96e-09</ixx>
+              <ixy>0</ixy>
+              <ixz>0</ixz>
+              <iyy>3.96e-09</iyy>
+              <iyz>0</iyz>
+              <izz>3.96e-09</izz>
+            </inertia>
+          </inertial>
+          <collision name='collision'>
+            <geometry>
+              <sphere>
+                <radius>0.025</radius>
+              </sphere>
+            </geometry>
+            <surface>
+              <contact>
+                <poissons_ratio>0.305</poissons_ratio>
+                <elastic_modulus>2e+11</elastic_modulus>
+                <ode>
+                  <kp>100000</kp>
+                  <kd>100</kd>
+                  <max_vel>100</max_vel>
+                  <min_depth>0.001</min_depth>
+                </ode>
+              </contact>
+              <friction>
+                <torsional>
+                  <coefficient>1</coefficient>
+                  <use_patch_radius>0</use_patch_radius>
+                  <surface_radius>0.01</surface_radius>
+                </torsional>
+              </friction>
+            </surface>
+          </collision>
+          <visual name='visual'>
+            <geometry>
+              <sphere>
+                <radius>0.025</radius>
+              </sphere>
+            </geometry>
+          </visual>
+          <velocity_decay>
+            <linear>0</linear>
+            <angular>0.005</angular>
+          </velocity_decay>
+        </link>
+        <pose frame=''>0 2.2 0 0 -0 0</pose>
+      </model>
+      <model name='ball_bearing_45'>
+        <link name='link'>
+          <pose frame=''>0 0 0.003 0 -0 0</pose>
+          <inertial>
+            <mass>1.1e-07</mass>
+            <inertia>
+              <ixx>3.96e-09</ixx>
+              <ixy>0</ixy>
+              <ixz>0</ixz>
+              <iyy>3.96e-09</iyy>
+              <iyz>0</iyz>
+              <izz>3.96e-09</izz>
+            </inertia>
+          </inertial>
+          <collision name='collision'>
+            <geometry>
+              <sphere>
+                <radius>0.025</radius>
+              </sphere>
+            </geometry>
+            <surface>
+              <contact>
+                <poissons_ratio>0.305</poissons_ratio>
+                <elastic_modulus>2e+11</elastic_modulus>
+                <ode>
+                  <kp>100000</kp>
+                  <kd>100</kd>
+                  <max_vel>100</max_vel>
+                  <min_depth>0.001</min_depth>
+                </ode>
+              </contact>
+              <friction>
+                <torsional>
+                  <coefficient>1</coefficient>
+                  <use_patch_radius>0</use_patch_radius>
+                  <surface_radius>0.01</surface_radius>
+                </torsional>
+              </friction>
+            </surface>
+          </collision>
+          <visual name='visual'>
+            <geometry>
+              <sphere>
+                <radius>0.025</radius>
+              </sphere>
+            </geometry>
+          </visual>
+          <velocity_decay>
+            <linear>0</linear>
+            <angular>0.005</angular>
+          </velocity_decay>
+        </link>
+        <pose frame=''>0 2.25 0 0 -0 0</pose>
+      </model>
+      <model name='ball_bearing_46'>
+        <link name='link'>
+          <pose frame=''>0 0 0.003 0 -0 0</pose>
+          <inertial>
+            <mass>1.1e-07</mass>
+            <inertia>
+              <ixx>3.96e-09</ixx>
+              <ixy>0</ixy>
+              <ixz>0</ixz>
+              <iyy>3.96e-09</iyy>
+              <iyz>0</iyz>
+              <izz>3.96e-09</izz>
+            </inertia>
+          </inertial>
+          <collision name='collision'>
+            <geometry>
+              <sphere>
+                <radius>0.025</radius>
+              </sphere>
+            </geometry>
+            <surface>
+              <contact>
+                <poissons_ratio>0.305</poissons_ratio>
+                <elastic_modulus>2e+11</elastic_modulus>
+                <ode>
+                  <kp>100000</kp>
+                  <kd>100</kd>
+                  <max_vel>100</max_vel>
+                  <min_depth>0.001</min_depth>
+                </ode>
+              </contact>
+              <friction>
+                <torsional>
+                  <coefficient>1</coefficient>
+                  <use_patch_radius>0</use_patch_radius>
+                  <surface_radius>0.01</surface_radius>
+                </torsional>
+              </friction>
+            </surface>
+          </collision>
+          <visual name='visual'>
+            <geometry>
+              <sphere>
+                <radius>0.025</radius>
+              </sphere>
+            </geometry>
+          </visual>
+          <velocity_decay>
+            <linear>0</linear>
+            <angular>0.005</angular>
+          </velocity_decay>
+        </link>
+        <pose frame=''>0 2.3 0 0 -0 0</pose>
+      </model>
+      <model name='ball_bearing_47'>
+        <link name='link'>
+          <pose frame=''>0 0 0.003 0 -0 0</pose>
+          <inertial>
+            <mass>1.1e-07</mass>
+            <inertia>
+              <ixx>3.96e-09</ixx>
+              <ixy>0</ixy>
+              <ixz>0</ixz>
+              <iyy>3.96e-09</iyy>
+              <iyz>0</iyz>
+              <izz>3.96e-09</izz>
+            </inertia>
+          </inertial>
+          <collision name='collision'>
+            <geometry>
+              <sphere>
+                <radius>0.025</radius>
+              </sphere>
+            </geometry>
+            <surface>
+              <contact>
+                <poissons_ratio>0.305</poissons_ratio>
+                <elastic_modulus>2e+11</elastic_modulus>
+                <ode>
+                  <kp>100000</kp>
+                  <kd>100</kd>
+                  <max_vel>100</max_vel>
+                  <min_depth>0.001</min_depth>
+                </ode>
+              </contact>
+              <friction>
+                <torsional>
+                  <coefficient>1</coefficient>
+                  <use_patch_radius>0</use_patch_radius>
+                  <surface_radius>0.01</surface_radius>
+                </torsional>
+              </friction>
+            </surface>
+          </collision>
+          <visual name='visual'>
+            <geometry>
+              <sphere>
+                <radius>0.025</radius>
+              </sphere>
+            </geometry>
+          </visual>
+          <velocity_decay>
+            <linear>0</linear>
+            <angular>0.005</angular>
+          </velocity_decay>
+        </link>
+        <pose frame=''>0 2.35 0 0 -0 0</pose>
+      </model>
+      <model name='ball_bearing_48'>
+        <link name='link'>
+          <pose frame=''>0 0 0.003 0 -0 0</pose>
+          <inertial>
+            <mass>1.1e-07</mass>
+            <inertia>
+              <ixx>3.96e-09</ixx>
+              <ixy>0</ixy>
+              <ixz>0</ixz>
+              <iyy>3.96e-09</iyy>
+              <iyz>0</iyz>
+              <izz>3.96e-09</izz>
+            </inertia>
+          </inertial>
+          <collision name='collision'>
+            <geometry>
+              <sphere>
+                <radius>0.025</radius>
+              </sphere>
+            </geometry>
+            <surface>
+              <contact>
+                <poissons_ratio>0.305</poissons_ratio>
+                <elastic_modulus>2e+11</elastic_modulus>
+                <ode>
+                  <kp>100000</kp>
+                  <kd>100</kd>
+                  <max_vel>100</max_vel>
+                  <min_depth>0.001</min_depth>
+                </ode>
+              </contact>
+              <friction>
+                <torsional>
+                  <coefficient>1</coefficient>
+                  <use_patch_radius>0</use_patch_radius>
+                  <surface_radius>0.01</surface_radius>
+                </torsional>
+              </friction>
+            </surface>
+          </collision>
+          <visual name='visual'>
+            <geometry>
+              <sphere>
+                <radius>0.025</radius>
+              </sphere>
+            </geometry>
+          </visual>
+          <velocity_decay>
+            <linear>0</linear>
+            <angular>0.005</angular>
+          </velocity_decay>
+        </link>
+        <pose frame=''>0 2.4 0 0 -0 0</pose>
+      </model>
+      <model name='ball_bearing_49'>
+        <link name='link'>
+          <pose frame=''>0 0 0.003 0 -0 0</pose>
+          <inertial>
+            <mass>1.1e-07</mass>
+            <inertia>
+              <ixx>3.96e-09</ixx>
+              <ixy>0</ixy>
+              <ixz>0</ixz>
+              <iyy>3.96e-09</iyy>
+              <iyz>0</iyz>
+              <izz>3.96e-09</izz>
+            </inertia>
+          </inertial>
+          <collision name='collision'>
+            <geometry>
+              <sphere>
+                <radius>0.025</radius>
+              </sphere>
+            </geometry>
+            <surface>
+              <contact>
+                <poissons_ratio>0.305</poissons_ratio>
+                <elastic_modulus>2e+11</elastic_modulus>
+                <ode>
+                  <kp>100000</kp>
+                  <kd>100</kd>
+                  <max_vel>100</max_vel>
+                  <min_depth>0.001</min_depth>
+                </ode>
+              </contact>
+              <friction>
+                <torsional>
+                  <coefficient>1</coefficient>
+                  <use_patch_radius>0</use_patch_radius>
+                  <surface_radius>0.01</surface_radius>
+                </torsional>
+              </friction>
+            </surface>
+          </collision>
+          <visual name='visual'>
+            <geometry>
+              <sphere>
+                <radius>0.025</radius>
+              </sphere>
+            </geometry>
+          </visual>
+          <velocity_decay>
+            <linear>0</linear>
+            <angular>0.005</angular>
+          </velocity_decay>
+        </link>
+        <pose frame=''>0 2.45 0 0 -0 0</pose>
+      </model>
+      <model name='ball_bearing_50'>
+        <link name='link'>
+          <pose frame=''>0 0 0.003 0 -0 0</pose>
+          <inertial>
+            <mass>1.1e-07</mass>
+            <inertia>
+              <ixx>3.96e-09</ixx>
+              <ixy>0</ixy>
+              <ixz>0</ixz>
+              <iyy>3.96e-09</iyy>
+              <iyz>0</iyz>
+              <izz>3.96e-09</izz>
+            </inertia>
+          </inertial>
+          <collision name='collision'>
+            <geometry>
+              <sphere>
+                <radius>0.025</radius>
+              </sphere>
+            </geometry>
+            <surface>
+              <contact>
+                <poissons_ratio>0.305</poissons_ratio>
+                <elastic_modulus>2e+11</elastic_modulus>
+                <ode>
+                  <kp>100000</kp>
+                  <kd>100</kd>
+                  <max_vel>100</max_vel>
+                  <min_depth>0.001</min_depth>
+                </ode>
+              </contact>
+              <friction>
+                <torsional>
+                  <coefficient>1</coefficient>
+                  <use_patch_radius>0</use_patch_radius>
+                  <surface_radius>0.01</surface_radius>
+                </torsional>
+              </friction>
+            </surface>
+          </collision>
+          <visual name='visual'>
+            <geometry>
+              <sphere>
+                <radius>0.025</radius>
+              </sphere>
+            </geometry>
+          </visual>
+          <velocity_decay>
+            <linear>0</linear>
+            <angular>0.005</angular>
+          </velocity_decay>
+        </link>
+        <pose frame=''>0 2.5 0 0 -0 0</pose>
+      </model>
+      <model name='ball_bearing_51'>
+        <link name='link'>
+          <pose frame=''>0 0 0.003 0 -0 0</pose>
+          <inertial>
+            <mass>1.1e-07</mass>
+            <inertia>
+              <ixx>3.96e-09</ixx>
+              <ixy>0</ixy>
+              <ixz>0</ixz>
+              <iyy>3.96e-09</iyy>
+              <iyz>0</iyz>
+              <izz>3.96e-09</izz>
+            </inertia>
+          </inertial>
+          <collision name='collision'>
+            <geometry>
+              <sphere>
+                <radius>0.025</radius>
+              </sphere>
+            </geometry>
+            <surface>
+              <contact>
+                <poissons_ratio>0.305</poissons_ratio>
+                <elastic_modulus>2e+11</elastic_modulus>
+                <ode>
+                  <kp>100000</kp>
+                  <kd>100</kd>
+                  <max_vel>100</max_vel>
+                  <min_depth>0.001</min_depth>
+                </ode>
+              </contact>
+              <friction>
+                <torsional>
+                  <coefficient>1</coefficient>
+                  <use_patch_radius>0</use_patch_radius>
+                  <surface_radius>0.01</surface_radius>
+                </torsional>
+              </friction>
+            </surface>
+          </collision>
+          <visual name='visual'>
+            <geometry>
+              <sphere>
+                <radius>0.025</radius>
+              </sphere>
+            </geometry>
+          </visual>
+          <velocity_decay>
+            <linear>0</linear>
+            <angular>0.005</angular>
+          </velocity_decay>
+        </link>
+        <pose frame=''>0 2.55 0 0 -0 0</pose>
+      </model>
+      <model name='ball_bearing_52'>
+        <link name='link'>
+          <pose frame=''>0 0 0.003 0 -0 0</pose>
+          <inertial>
+            <mass>1.1e-07</mass>
+            <inertia>
+              <ixx>3.96e-09</ixx>
+              <ixy>0</ixy>
+              <ixz>0</ixz>
+              <iyy>3.96e-09</iyy>
+              <iyz>0</iyz>
+              <izz>3.96e-09</izz>
+            </inertia>
+          </inertial>
+          <collision name='collision'>
+            <geometry>
+              <sphere>
+                <radius>0.025</radius>
+              </sphere>
+            </geometry>
+            <surface>
+              <contact>
+                <poissons_ratio>0.305</poissons_ratio>
+                <elastic_modulus>2e+11</elastic_modulus>
+                <ode>
+                  <kp>100000</kp>
+                  <kd>100</kd>
+                  <max_vel>100</max_vel>
+                  <min_depth>0.001</min_depth>
+                </ode>
+              </contact>
+              <friction>
+                <torsional>
+                  <coefficient>1</coefficient>
+                  <use_patch_radius>0</use_patch_radius>
+                  <surface_radius>0.01</surface_radius>
+                </torsional>
+              </friction>
+            </surface>
+          </collision>
+          <visual name='visual'>
+            <geometry>
+              <sphere>
+                <radius>0.025</radius>
+              </sphere>
+            </geometry>
+          </visual>
+          <velocity_decay>
+            <linear>0</linear>
+            <angular>0.005</angular>
+          </velocity_decay>
+        </link>
+        <pose frame=''>0 2.6 0 0 -0 0</pose>
+      </model>
+      <model name='ball_bearing_53'>
+        <link name='link'>
+          <pose frame=''>0 0 0.003 0 -0 0</pose>
+          <inertial>
+            <mass>1.1e-07</mass>
+            <inertia>
+              <ixx>3.96e-09</ixx>
+              <ixy>0</ixy>
+              <ixz>0</ixz>
+              <iyy>3.96e-09</iyy>
+              <iyz>0</iyz>
+              <izz>3.96e-09</izz>
+            </inertia>
+          </inertial>
+          <collision name='collision'>
+            <geometry>
+              <sphere>
+                <radius>0.025</radius>
+              </sphere>
+            </geometry>
+            <surface>
+              <contact>
+                <poissons_ratio>0.305</poissons_ratio>
+                <elastic_modulus>2e+11</elastic_modulus>
+                <ode>
+                  <kp>100000</kp>
+                  <kd>100</kd>
+                  <max_vel>100</max_vel>
+                  <min_depth>0.001</min_depth>
+                </ode>
+              </contact>
+              <friction>
+                <torsional>
+                  <coefficient>1</coefficient>
+                  <use_patch_radius>0</use_patch_radius>
+                  <surface_radius>0.01</surface_radius>
+                </torsional>
+              </friction>
+            </surface>
+          </collision>
+          <visual name='visual'>
+            <geometry>
+              <sphere>
+                <radius>0.025</radius>
+              </sphere>
+            </geometry>
+          </visual>
+          <velocity_decay>
+            <linear>0</linear>
+            <angular>0.005</angular>
+          </velocity_decay>
+        </link>
+        <pose frame=''>0 2.65 0 0 -0 0</pose>
+      </model>
+      <model name='ball_bearing_54'>
+        <link name='link'>
+          <pose frame=''>0 0 0.003 0 -0 0</pose>
+          <inertial>
+            <mass>1.1e-07</mass>
+            <inertia>
+              <ixx>3.96e-09</ixx>
+              <ixy>0</ixy>
+              <ixz>0</ixz>
+              <iyy>3.96e-09</iyy>
+              <iyz>0</iyz>
+              <izz>3.96e-09</izz>
+            </inertia>
+          </inertial>
+          <collision name='collision'>
+            <geometry>
+              <sphere>
+                <radius>0.025</radius>
+              </sphere>
+            </geometry>
+            <surface>
+              <contact>
+                <poissons_ratio>0.305</poissons_ratio>
+                <elastic_modulus>2e+11</elastic_modulus>
+                <ode>
+                  <kp>100000</kp>
+                  <kd>100</kd>
+                  <max_vel>100</max_vel>
+                  <min_depth>0.001</min_depth>
+                </ode>
+              </contact>
+              <friction>
+                <torsional>
+                  <coefficient>1</coefficient>
+                  <use_patch_radius>0</use_patch_radius>
+                  <surface_radius>0.01</surface_radius>
+                </torsional>
+              </friction>
+            </surface>
+          </collision>
+          <visual name='visual'>
+            <geometry>
+              <sphere>
+                <radius>0.025</radius>
+              </sphere>
+            </geometry>
+          </visual>
+          <velocity_decay>
+            <linear>0</linear>
+            <angular>0.005</angular>
+          </velocity_decay>
+        </link>
+        <pose frame=''>0 2.7 0 0 -0 0</pose>
+      </model>
+      <model name='ball_bearing_55'>
+        <link name='link'>
+          <pose frame=''>0 0 0.003 0 -0 0</pose>
+          <inertial>
+            <mass>1.1e-07</mass>
+            <inertia>
+              <ixx>3.96e-09</ixx>
+              <ixy>0</ixy>
+              <ixz>0</ixz>
+              <iyy>3.96e-09</iyy>
+              <iyz>0</iyz>
+              <izz>3.96e-09</izz>
+            </inertia>
+          </inertial>
+          <collision name='collision'>
+            <geometry>
+              <sphere>
+                <radius>0.025</radius>
+              </sphere>
+            </geometry>
+            <surface>
+              <contact>
+                <poissons_ratio>0.305</poissons_ratio>
+                <elastic_modulus>2e+11</elastic_modulus>
+                <ode>
+                  <kp>100000</kp>
+                  <kd>100</kd>
+                  <max_vel>100</max_vel>
+                  <min_depth>0.001</min_depth>
+                </ode>
+              </contact>
+              <friction>
+                <torsional>
+                  <coefficient>1</coefficient>
+                  <use_patch_radius>0</use_patch_radius>
+                  <surface_radius>0.01</surface_radius>
+                </torsional>
+              </friction>
+            </surface>
+          </collision>
+          <visual name='visual'>
+            <geometry>
+              <sphere>
+                <radius>0.025</radius>
+              </sphere>
+            </geometry>
+          </visual>
+          <velocity_decay>
+            <linear>0</linear>
+            <angular>0.005</angular>
+          </velocity_decay>
+        </link>
+        <pose frame=''>0 2.75 0 0 -0 0</pose>
+      </model>
+      <model name='ball_bearing_56'>
+        <link name='link'>
+          <pose frame=''>0 0 0.003 0 -0 0</pose>
+          <inertial>
+            <mass>1.1e-07</mass>
+            <inertia>
+              <ixx>3.96e-09</ixx>
+              <ixy>0</ixy>
+              <ixz>0</ixz>
+              <iyy>3.96e-09</iyy>
+              <iyz>0</iyz>
+              <izz>3.96e-09</izz>
+            </inertia>
+          </inertial>
+          <collision name='collision'>
+            <geometry>
+              <sphere>
+                <radius>0.025</radius>
+              </sphere>
+            </geometry>
+            <surface>
+              <contact>
+                <poissons_ratio>0.305</poissons_ratio>
+                <elastic_modulus>2e+11</elastic_modulus>
+                <ode>
+                  <kp>100000</kp>
+                  <kd>100</kd>
+                  <max_vel>100</max_vel>
+                  <min_depth>0.001</min_depth>
+                </ode>
+              </contact>
+              <friction>
+                <torsional>
+                  <coefficient>1</coefficient>
+                  <use_patch_radius>0</use_patch_radius>
+                  <surface_radius>0.01</surface_radius>
+                </torsional>
+              </friction>
+            </surface>
+          </collision>
+          <visual name='visual'>
+            <geometry>
+              <sphere>
+                <radius>0.025</radius>
+              </sphere>
+            </geometry>
+          </visual>
+          <velocity_decay>
+            <linear>0</linear>
+            <angular>0.005</angular>
+          </velocity_decay>
+        </link>
+        <pose frame=''>0 2.8 0 0 -0 0</pose>
+      </model>
+      <model name='ball_bearing_57'>
+        <link name='link'>
+          <pose frame=''>0 0 0.003 0 -0 0</pose>
+          <inertial>
+            <mass>1.1e-07</mass>
+            <inertia>
+              <ixx>3.96e-09</ixx>
+              <ixy>0</ixy>
+              <ixz>0</ixz>
+              <iyy>3.96e-09</iyy>
+              <iyz>0</iyz>
+              <izz>3.96e-09</izz>
+            </inertia>
+          </inertial>
+          <collision name='collision'>
+            <geometry>
+              <sphere>
+                <radius>0.025</radius>
+              </sphere>
+            </geometry>
+            <surface>
+              <contact>
+                <poissons_ratio>0.305</poissons_ratio>
+                <elastic_modulus>2e+11</elastic_modulus>
+                <ode>
+                  <kp>100000</kp>
+                  <kd>100</kd>
+                  <max_vel>100</max_vel>
+                  <min_depth>0.001</min_depth>
+                </ode>
+              </contact>
+              <friction>
+                <torsional>
+                  <coefficient>1</coefficient>
+                  <use_patch_radius>0</use_patch_radius>
+                  <surface_radius>0.01</surface_radius>
+                </torsional>
+              </friction>
+            </surface>
+          </collision>
+          <visual name='visual'>
+            <geometry>
+              <sphere>
+                <radius>0.025</radius>
+              </sphere>
+            </geometry>
+          </visual>
+          <velocity_decay>
+            <linear>0</linear>
+            <angular>0.005</angular>
+          </velocity_decay>
+        </link>
+        <pose frame=''>0 2.85 0 0 -0 0</pose>
+      </model>
+      <model name='ball_bearing_58'>
+        <link name='link'>
+          <pose frame=''>0 0 0.003 0 -0 0</pose>
+          <inertial>
+            <mass>1.1e-07</mass>
+            <inertia>
+              <ixx>3.96e-09</ixx>
+              <ixy>0</ixy>
+              <ixz>0</ixz>
+              <iyy>3.96e-09</iyy>
+              <iyz>0</iyz>
+              <izz>3.96e-09</izz>
+            </inertia>
+          </inertial>
+          <collision name='collision'>
+            <geometry>
+              <sphere>
+                <radius>0.025</radius>
+              </sphere>
+            </geometry>
+            <surface>
+              <contact>
+                <poissons_ratio>0.305</poissons_ratio>
+                <elastic_modulus>2e+11</elastic_modulus>
+                <ode>
+                  <kp>100000</kp>
+                  <kd>100</kd>
+                  <max_vel>100</max_vel>
+                  <min_depth>0.001</min_depth>
+                </ode>
+              </contact>
+              <friction>
+                <torsional>
+                  <coefficient>1</coefficient>
+                  <use_patch_radius>0</use_patch_radius>
+                  <surface_radius>0.01</surface_radius>
+                </torsional>
+              </friction>
+            </surface>
+          </collision>
+          <visual name='visual'>
+            <geometry>
+              <sphere>
+                <radius>0.025</radius>
+              </sphere>
+            </geometry>
+          </visual>
+          <velocity_decay>
+            <linear>0</linear>
+            <angular>0.005</angular>
+          </velocity_decay>
+        </link>
+        <pose frame=''>0 2.9 0 0 -0 0</pose>
+      </model>
+      <model name='ball_bearing_59'>
+        <link name='link'>
+          <pose frame=''>0 0 0.003 0 -0 0</pose>
+          <inertial>
+            <mass>1.1e-07</mass>
+            <inertia>
+              <ixx>3.96e-09</ixx>
+              <ixy>0</ixy>
+              <ixz>0</ixz>
+              <iyy>3.96e-09</iyy>
+              <iyz>0</iyz>
+              <izz>3.96e-09</izz>
+            </inertia>
+          </inertial>
+          <collision name='collision'>
+            <geometry>
+              <sphere>
+                <radius>0.025</radius>
+              </sphere>
+            </geometry>
+            <surface>
+              <contact>
+                <poissons_ratio>0.305</poissons_ratio>
+                <elastic_modulus>2e+11</elastic_modulus>
+                <ode>
+                  <kp>100000</kp>
+                  <kd>100</kd>
+                  <max_vel>100</max_vel>
+                  <min_depth>0.001</min_depth>
+                </ode>
+              </contact>
+              <friction>
+                <torsional>
+                  <coefficient>1</coefficient>
+                  <use_patch_radius>0</use_patch_radius>
+                  <surface_radius>0.01</surface_radius>
+                </torsional>
+              </friction>
+            </surface>
+          </collision>
+          <visual name='visual'>
+            <geometry>
+              <sphere>
+                <radius>0.025</radius>
+              </sphere>
+            </geometry>
+          </visual>
+          <velocity_decay>
+            <linear>0</linear>
+            <angular>0.005</angular>
+          </velocity_decay>
+        </link>
+        <pose frame=''>0 2.95 0 0 -0 0</pose>
+      </model>
+      <model name='ball_bearing_60'>
+        <link name='link'>
+          <pose frame=''>0 0 0.003 0 -0 0</pose>
+          <inertial>
+            <mass>1.1e-07</mass>
+            <inertia>
+              <ixx>3.96e-09</ixx>
+              <ixy>0</ixy>
+              <ixz>0</ixz>
+              <iyy>3.96e-09</iyy>
+              <iyz>0</iyz>
+              <izz>3.96e-09</izz>
+            </inertia>
+          </inertial>
+          <collision name='collision'>
+            <geometry>
+              <sphere>
+                <radius>0.025</radius>
+              </sphere>
+            </geometry>
+            <surface>
+              <contact>
+                <poissons_ratio>0.305</poissons_ratio>
+                <elastic_modulus>2e+11</elastic_modulus>
+                <ode>
+                  <kp>100000</kp>
+                  <kd>100</kd>
+                  <max_vel>100</max_vel>
+                  <min_depth>0.001</min_depth>
+                </ode>
+              </contact>
+              <friction>
+                <torsional>
+                  <coefficient>1</coefficient>
+                  <use_patch_radius>0</use_patch_radius>
+                  <surface_radius>0.01</surface_radius>
+                </torsional>
+              </friction>
+            </surface>
+          </collision>
+          <visual name='visual'>
+            <geometry>
+              <sphere>
+                <radius>0.025</radius>
+              </sphere>
+            </geometry>
+          </visual>
+          <velocity_decay>
+            <linear>0</linear>
+            <angular>0.005</angular>
+          </velocity_decay>
+        </link>
+        <pose frame=''>0 3 0 0 -0 0</pose>
+      </model>
+      <model name='ball_bearing_61'>
+        <link name='link'>
+          <pose frame=''>0 0 0.003 0 -0 0</pose>
+          <inertial>
+            <mass>1.1e-07</mass>
+            <inertia>
+              <ixx>3.96e-09</ixx>
+              <ixy>0</ixy>
+              <ixz>0</ixz>
+              <iyy>3.96e-09</iyy>
+              <iyz>0</iyz>
+              <izz>3.96e-09</izz>
+            </inertia>
+          </inertial>
+          <collision name='collision'>
+            <geometry>
+              <sphere>
+                <radius>0.025</radius>
+              </sphere>
+            </geometry>
+            <surface>
+              <contact>
+                <poissons_ratio>0.305</poissons_ratio>
+                <elastic_modulus>2e+11</elastic_modulus>
+                <ode>
+                  <kp>100000</kp>
+                  <kd>100</kd>
+                  <max_vel>100</max_vel>
+                  <min_depth>0.001</min_depth>
+                </ode>
+              </contact>
+              <friction>
+                <torsional>
+                  <coefficient>1</coefficient>
+                  <use_patch_radius>0</use_patch_radius>
+                  <surface_radius>0.01</surface_radius>
+                </torsional>
+              </friction>
+            </surface>
+          </collision>
+          <visual name='visual'>
+            <geometry>
+              <sphere>
+                <radius>0.025</radius>
+              </sphere>
+            </geometry>
+          </visual>
+          <velocity_decay>
+            <linear>0</linear>
+            <angular>0.005</angular>
+          </velocity_decay>
+        </link>
+        <pose frame=''>0 3.05 0 0 -0 0</pose>
+      </model>
+      <model name='ball_bearing_62'>
+        <link name='link'>
+          <pose frame=''>0 0 0.003 0 -0 0</pose>
+          <inertial>
+            <mass>1.1e-07</mass>
+            <inertia>
+              <ixx>3.96e-09</ixx>
+              <ixy>0</ixy>
+              <ixz>0</ixz>
+              <iyy>3.96e-09</iyy>
+              <iyz>0</iyz>
+              <izz>3.96e-09</izz>
+            </inertia>
+          </inertial>
+          <collision name='collision'>
+            <geometry>
+              <sphere>
+                <radius>0.025</radius>
+              </sphere>
+            </geometry>
+            <surface>
+              <contact>
+                <poissons_ratio>0.305</poissons_ratio>
+                <elastic_modulus>2e+11</elastic_modulus>
+                <ode>
+                  <kp>100000</kp>
+                  <kd>100</kd>
+                  <max_vel>100</max_vel>
+                  <min_depth>0.001</min_depth>
+                </ode>
+              </contact>
+              <friction>
+                <torsional>
+                  <coefficient>1</coefficient>
+                  <use_patch_radius>0</use_patch_radius>
+                  <surface_radius>0.01</surface_radius>
+                </torsional>
+              </friction>
+            </surface>
+          </collision>
+          <visual name='visual'>
+            <geometry>
+              <sphere>
+                <radius>0.025</radius>
+              </sphere>
+            </geometry>
+          </visual>
+          <velocity_decay>
+            <linear>0</linear>
+            <angular>0.005</angular>
+          </velocity_decay>
+        </link>
+        <pose frame=''>0 3.1 0 0 -0 0</pose>
+      </model>
+      <model name='ball_bearing_63'>
+        <link name='link'>
+          <pose frame=''>0 0 0.003 0 -0 0</pose>
+          <inertial>
+            <mass>1.1e-07</mass>
+            <inertia>
+              <ixx>3.96e-09</ixx>
+              <ixy>0</ixy>
+              <ixz>0</ixz>
+              <iyy>3.96e-09</iyy>
+              <iyz>0</iyz>
+              <izz>3.96e-09</izz>
+            </inertia>
+          </inertial>
+          <collision name='collision'>
+            <geometry>
+              <sphere>
+                <radius>0.025</radius>
+              </sphere>
+            </geometry>
+            <surface>
+              <contact>
+                <poissons_ratio>0.305</poissons_ratio>
+                <elastic_modulus>2e+11</elastic_modulus>
+                <ode>
+                  <kp>100000</kp>
+                  <kd>100</kd>
+                  <max_vel>100</max_vel>
+                  <min_depth>0.001</min_depth>
+                </ode>
+              </contact>
+              <friction>
+                <torsional>
+                  <coefficient>1</coefficient>
+                  <use_patch_radius>0</use_patch_radius>
+                  <surface_radius>0.01</surface_radius>
+                </torsional>
+              </friction>
+            </surface>
+          </collision>
+          <visual name='visual'>
+            <geometry>
+              <sphere>
+                <radius>0.025</radius>
+              </sphere>
+            </geometry>
+          </visual>
+          <velocity_decay>
+            <linear>0</linear>
+            <angular>0.005</angular>
+          </velocity_decay>
+        </link>
+        <pose frame=''>0 3.15 0 0 -0 0</pose>
+      </model>
+      <model name='ball_bearing_64'>
+        <link name='link'>
+          <pose frame=''>0 0 0.003 0 -0 0</pose>
+          <inertial>
+            <mass>1.1e-07</mass>
+            <inertia>
+              <ixx>3.96e-09</ixx>
+              <ixy>0</ixy>
+              <ixz>0</ixz>
+              <iyy>3.96e-09</iyy>
+              <iyz>0</iyz>
+              <izz>3.96e-09</izz>
+            </inertia>
+          </inertial>
+          <collision name='collision'>
+            <geometry>
+              <sphere>
+                <radius>0.025</radius>
+              </sphere>
+            </geometry>
+            <surface>
+              <contact>
+                <poissons_ratio>0.305</poissons_ratio>
+                <elastic_modulus>2e+11</elastic_modulus>
+                <ode>
+                  <kp>100000</kp>
+                  <kd>100</kd>
+                  <max_vel>100</max_vel>
+                  <min_depth>0.001</min_depth>
+                </ode>
+              </contact>
+              <friction>
+                <torsional>
+                  <coefficient>1</coefficient>
+                  <use_patch_radius>0</use_patch_radius>
+                  <surface_radius>0.01</surface_radius>
+                </torsional>
+              </friction>
+            </surface>
+          </collision>
+          <visual name='visual'>
+            <geometry>
+              <sphere>
+                <radius>0.025</radius>
+              </sphere>
+            </geometry>
+          </visual>
+          <velocity_decay>
+            <linear>0</linear>
+            <angular>0.005</angular>
+          </velocity_decay>
+        </link>
+        <pose frame=''>0 3.2 0 0 -0 0</pose>
+      </model>
+      <model name='ball_bearing_65'>
+        <link name='link'>
+          <pose frame=''>0 0 0.003 0 -0 0</pose>
+          <inertial>
+            <mass>1.1e-07</mass>
+            <inertia>
+              <ixx>3.96e-09</ixx>
+              <ixy>0</ixy>
+              <ixz>0</ixz>
+              <iyy>3.96e-09</iyy>
+              <iyz>0</iyz>
+              <izz>3.96e-09</izz>
+            </inertia>
+          </inertial>
+          <collision name='collision'>
+            <geometry>
+              <sphere>
+                <radius>0.025</radius>
+              </sphere>
+            </geometry>
+            <surface>
+              <contact>
+                <poissons_ratio>0.305</poissons_ratio>
+                <elastic_modulus>2e+11</elastic_modulus>
+                <ode>
+                  <kp>100000</kp>
+                  <kd>100</kd>
+                  <max_vel>100</max_vel>
+                  <min_depth>0.001</min_depth>
+                </ode>
+              </contact>
+              <friction>
+                <torsional>
+                  <coefficient>1</coefficient>
+                  <use_patch_radius>0</use_patch_radius>
+                  <surface_radius>0.01</surface_radius>
+                </torsional>
+              </friction>
+            </surface>
+          </collision>
+          <visual name='visual'>
+            <geometry>
+              <sphere>
+                <radius>0.025</radius>
+              </sphere>
+            </geometry>
+          </visual>
+          <velocity_decay>
+            <linear>0</linear>
+            <angular>0.005</angular>
+          </velocity_decay>
+        </link>
+        <pose frame=''>0 3.25 0 0 -0 0</pose>
+      </model>
+      <model name='ball_bearing_66'>
+        <link name='link'>
+          <pose frame=''>0 0 0.003 0 -0 0</pose>
+          <inertial>
+            <mass>1.1e-07</mass>
+            <inertia>
+              <ixx>3.96e-09</ixx>
+              <ixy>0</ixy>
+              <ixz>0</ixz>
+              <iyy>3.96e-09</iyy>
+              <iyz>0</iyz>
+              <izz>3.96e-09</izz>
+            </inertia>
+          </inertial>
+          <collision name='collision'>
+            <geometry>
+              <sphere>
+                <radius>0.025</radius>
+              </sphere>
+            </geometry>
+            <surface>
+              <contact>
+                <poissons_ratio>0.305</poissons_ratio>
+                <elastic_modulus>2e+11</elastic_modulus>
+                <ode>
+                  <kp>100000</kp>
+                  <kd>100</kd>
+                  <max_vel>100</max_vel>
+                  <min_depth>0.001</min_depth>
+                </ode>
+              </contact>
+              <friction>
+                <torsional>
+                  <coefficient>1</coefficient>
+                  <use_patch_radius>0</use_patch_radius>
+                  <surface_radius>0.01</surface_radius>
+                </torsional>
+              </friction>
+            </surface>
+          </collision>
+          <visual name='visual'>
+            <geometry>
+              <sphere>
+                <radius>0.025</radius>
+              </sphere>
+            </geometry>
+          </visual>
+          <velocity_decay>
+            <linear>0</linear>
+            <angular>0.005</angular>
+          </velocity_decay>
+        </link>
+        <pose frame=''>0 3.3 0 0 -0 0</pose>
+      </model>
+      <model name='ball_bearing_67'>
+        <link name='link'>
+          <pose frame=''>0 0 0.003 0 -0 0</pose>
+          <inertial>
+            <mass>1.1e-07</mass>
+            <inertia>
+              <ixx>3.96e-09</ixx>
+              <ixy>0</ixy>
+              <ixz>0</ixz>
+              <iyy>3.96e-09</iyy>
+              <iyz>0</iyz>
+              <izz>3.96e-09</izz>
+            </inertia>
+          </inertial>
+          <collision name='collision'>
+            <geometry>
+              <sphere>
+                <radius>0.025</radius>
+              </sphere>
+            </geometry>
+            <surface>
+              <contact>
+                <poissons_ratio>0.305</poissons_ratio>
+                <elastic_modulus>2e+11</elastic_modulus>
+                <ode>
+                  <kp>100000</kp>
+                  <kd>100</kd>
+                  <max_vel>100</max_vel>
+                  <min_depth>0.001</min_depth>
+                </ode>
+              </contact>
+              <friction>
+                <torsional>
+                  <coefficient>1</coefficient>
+                  <use_patch_radius>0</use_patch_radius>
+                  <surface_radius>0.01</surface_radius>
+                </torsional>
+              </friction>
+            </surface>
+          </collision>
+          <visual name='visual'>
+            <geometry>
+              <sphere>
+                <radius>0.025</radius>
+              </sphere>
+            </geometry>
+          </visual>
+          <velocity_decay>
+            <linear>0</linear>
+            <angular>0.005</angular>
+          </velocity_decay>
+        </link>
+        <pose frame=''>0 3.35 0 0 -0 0</pose>
+      </model>
+      <model name='ball_bearing_68'>
+        <link name='link'>
+          <pose frame=''>0 0 0.003 0 -0 0</pose>
+          <inertial>
+            <mass>1.1e-07</mass>
+            <inertia>
+              <ixx>3.96e-09</ixx>
+              <ixy>0</ixy>
+              <ixz>0</ixz>
+              <iyy>3.96e-09</iyy>
+              <iyz>0</iyz>
+              <izz>3.96e-09</izz>
+            </inertia>
+          </inertial>
+          <collision name='collision'>
+            <geometry>
+              <sphere>
+                <radius>0.025</radius>
+              </sphere>
+            </geometry>
+            <surface>
+              <contact>
+                <poissons_ratio>0.305</poissons_ratio>
+                <elastic_modulus>2e+11</elastic_modulus>
+                <ode>
+                  <kp>100000</kp>
+                  <kd>100</kd>
+                  <max_vel>100</max_vel>
+                  <min_depth>0.001</min_depth>
+                </ode>
+              </contact>
+              <friction>
+                <torsional>
+                  <coefficient>1</coefficient>
+                  <use_patch_radius>0</use_patch_radius>
+                  <surface_radius>0.01</surface_radius>
+                </torsional>
+              </friction>
+            </surface>
+          </collision>
+          <visual name='visual'>
+            <geometry>
+              <sphere>
+                <radius>0.025</radius>
+              </sphere>
+            </geometry>
+          </visual>
+          <velocity_decay>
+            <linear>0</linear>
+            <angular>0.005</angular>
+          </velocity_decay>
+        </link>
+        <pose frame=''>0 3.4 0 0 -0 0</pose>
+      </model>
+      <model name='ball_bearing_69'>
+        <link name='link'>
+          <pose frame=''>0 0 0.003 0 -0 0</pose>
+          <inertial>
+            <mass>1.1e-07</mass>
+            <inertia>
+              <ixx>3.96e-09</ixx>
+              <ixy>0</ixy>
+              <ixz>0</ixz>
+              <iyy>3.96e-09</iyy>
+              <iyz>0</iyz>
+              <izz>3.96e-09</izz>
+            </inertia>
+          </inertial>
+          <collision name='collision'>
+            <geometry>
+              <sphere>
+                <radius>0.025</radius>
+              </sphere>
+            </geometry>
+            <surface>
+              <contact>
+                <poissons_ratio>0.305</poissons_ratio>
+                <elastic_modulus>2e+11</elastic_modulus>
+                <ode>
+                  <kp>100000</kp>
+                  <kd>100</kd>
+                  <max_vel>100</max_vel>
+                  <min_depth>0.001</min_depth>
+                </ode>
+              </contact>
+              <friction>
+                <torsional>
+                  <coefficient>1</coefficient>
+                  <use_patch_radius>0</use_patch_radius>
+                  <surface_radius>0.01</surface_radius>
+                </torsional>
+              </friction>
+            </surface>
+          </collision>
+          <visual name='visual'>
+            <geometry>
+              <sphere>
+                <radius>0.025</radius>
+              </sphere>
+            </geometry>
+          </visual>
+          <velocity_decay>
+            <linear>0</linear>
+            <angular>0.005</angular>
+          </velocity_decay>
+        </link>
+        <pose frame=''>0 3.45 0 0 -0 0</pose>
+      </model>
+      <model name='ball_bearing_70'>
+        <link name='link'>
+          <pose frame=''>0 0 0.003 0 -0 0</pose>
+          <inertial>
+            <mass>1.1e-07</mass>
+            <inertia>
+              <ixx>3.96e-09</ixx>
+              <ixy>0</ixy>
+              <ixz>0</ixz>
+              <iyy>3.96e-09</iyy>
+              <iyz>0</iyz>
+              <izz>3.96e-09</izz>
+            </inertia>
+          </inertial>
+          <collision name='collision'>
+            <geometry>
+              <sphere>
+                <radius>0.025</radius>
+              </sphere>
+            </geometry>
+            <surface>
+              <contact>
+                <poissons_ratio>0.305</poissons_ratio>
+                <elastic_modulus>2e+11</elastic_modulus>
+                <ode>
+                  <kp>100000</kp>
+                  <kd>100</kd>
+                  <max_vel>100</max_vel>
+                  <min_depth>0.001</min_depth>
+                </ode>
+              </contact>
+              <friction>
+                <torsional>
+                  <coefficient>1</coefficient>
+                  <use_patch_radius>0</use_patch_radius>
+                  <surface_radius>0.01</surface_radius>
+                </torsional>
+              </friction>
+            </surface>
+          </collision>
+          <visual name='visual'>
+            <geometry>
+              <sphere>
+                <radius>0.025</radius>
+              </sphere>
+            </geometry>
+          </visual>
+          <velocity_decay>
+            <linear>0</linear>
+            <angular>0.005</angular>
+          </velocity_decay>
+        </link>
+        <pose frame=''>0 3.5 0 0 -0 0</pose>
+      </model>
+      <model name='ball_bearing_71'>
+        <link name='link'>
+          <pose frame=''>0 0 0.003 0 -0 0</pose>
+          <inertial>
+            <mass>1.1e-07</mass>
+            <inertia>
+              <ixx>3.96e-09</ixx>
+              <ixy>0</ixy>
+              <ixz>0</ixz>
+              <iyy>3.96e-09</iyy>
+              <iyz>0</iyz>
+              <izz>3.96e-09</izz>
+            </inertia>
+          </inertial>
+          <collision name='collision'>
+            <geometry>
+              <sphere>
+                <radius>0.025</radius>
+              </sphere>
+            </geometry>
+            <surface>
+              <contact>
+                <poissons_ratio>0.305</poissons_ratio>
+                <elastic_modulus>2e+11</elastic_modulus>
+                <ode>
+                  <kp>100000</kp>
+                  <kd>100</kd>
+                  <max_vel>100</max_vel>
+                  <min_depth>0.001</min_depth>
+                </ode>
+              </contact>
+              <friction>
+                <torsional>
+                  <coefficient>1</coefficient>
+                  <use_patch_radius>0</use_patch_radius>
+                  <surface_radius>0.01</surface_radius>
+                </torsional>
+              </friction>
+            </surface>
+          </collision>
+          <visual name='visual'>
+            <geometry>
+              <sphere>
+                <radius>0.025</radius>
+              </sphere>
+            </geometry>
+          </visual>
+          <velocity_decay>
+            <linear>0</linear>
+            <angular>0.005</angular>
+          </velocity_decay>
+        </link>
+        <pose frame=''>0 3.55 0 0 -0 0</pose>
+      </model>
+      <model name='ball_bearing_72'>
+        <link name='link'>
+          <pose frame=''>0 0 0.003 0 -0 0</pose>
+          <inertial>
+            <mass>1.1e-07</mass>
+            <inertia>
+              <ixx>3.96e-09</ixx>
+              <ixy>0</ixy>
+              <ixz>0</ixz>
+              <iyy>3.96e-09</iyy>
+              <iyz>0</iyz>
+              <izz>3.96e-09</izz>
+            </inertia>
+          </inertial>
+          <collision name='collision'>
+            <geometry>
+              <sphere>
+                <radius>0.025</radius>
+              </sphere>
+            </geometry>
+            <surface>
+              <contact>
+                <poissons_ratio>0.305</poissons_ratio>
+                <elastic_modulus>2e+11</elastic_modulus>
+                <ode>
+                  <kp>100000</kp>
+                  <kd>100</kd>
+                  <max_vel>100</max_vel>
+                  <min_depth>0.001</min_depth>
+                </ode>
+              </contact>
+              <friction>
+                <torsional>
+                  <coefficient>1</coefficient>
+                  <use_patch_radius>0</use_patch_radius>
+                  <surface_radius>0.01</surface_radius>
+                </torsional>
+              </friction>
+            </surface>
+          </collision>
+          <visual name='visual'>
+            <geometry>
+              <sphere>
+                <radius>0.025</radius>
+              </sphere>
+            </geometry>
+          </visual>
+          <velocity_decay>
+            <linear>0</linear>
+            <angular>0.005</angular>
+          </velocity_decay>
+        </link>
+        <pose frame=''>0 3.6 0 0 -0 0</pose>
+      </model>
+      <model name='ball_bearing_73'>
+        <link name='link'>
+          <pose frame=''>0 0 0.003 0 -0 0</pose>
+          <inertial>
+            <mass>1.1e-07</mass>
+            <inertia>
+              <ixx>3.96e-09</ixx>
+              <ixy>0</ixy>
+              <ixz>0</ixz>
+              <iyy>3.96e-09</iyy>
+              <iyz>0</iyz>
+              <izz>3.96e-09</izz>
+            </inertia>
+          </inertial>
+          <collision name='collision'>
+            <geometry>
+              <sphere>
+                <radius>0.025</radius>
+              </sphere>
+            </geometry>
+            <surface>
+              <contact>
+                <poissons_ratio>0.305</poissons_ratio>
+                <elastic_modulus>2e+11</elastic_modulus>
+                <ode>
+                  <kp>100000</kp>
+                  <kd>100</kd>
+                  <max_vel>100</max_vel>
+                  <min_depth>0.001</min_depth>
+                </ode>
+              </contact>
+              <friction>
+                <torsional>
+                  <coefficient>1</coefficient>
+                  <use_patch_radius>0</use_patch_radius>
+                  <surface_radius>0.01</surface_radius>
+                </torsional>
+              </friction>
+            </surface>
+          </collision>
+          <visual name='visual'>
+            <geometry>
+              <sphere>
+                <radius>0.025</radius>
+              </sphere>
+            </geometry>
+          </visual>
+          <velocity_decay>
+            <linear>0</linear>
+            <angular>0.005</angular>
+          </velocity_decay>
+        </link>
+        <pose frame=''>0 3.65 0 0 -0 0</pose>
+      </model>
+      <model name='ball_bearing_74'>
+        <link name='link'>
+          <pose frame=''>0 0 0.003 0 -0 0</pose>
+          <inertial>
+            <mass>1.1e-07</mass>
+            <inertia>
+              <ixx>3.96e-09</ixx>
+              <ixy>0</ixy>
+              <ixz>0</ixz>
+              <iyy>3.96e-09</iyy>
+              <iyz>0</iyz>
+              <izz>3.96e-09</izz>
+            </inertia>
+          </inertial>
+          <collision name='collision'>
+            <geometry>
+              <sphere>
+                <radius>0.025</radius>
+              </sphere>
+            </geometry>
+            <surface>
+              <contact>
+                <poissons_ratio>0.305</poissons_ratio>
+                <elastic_modulus>2e+11</elastic_modulus>
+                <ode>
+                  <kp>100000</kp>
+                  <kd>100</kd>
+                  <max_vel>100</max_vel>
+                  <min_depth>0.001</min_depth>
+                </ode>
+              </contact>
+              <friction>
+                <torsional>
+                  <coefficient>1</coefficient>
+                  <use_patch_radius>0</use_patch_radius>
+                  <surface_radius>0.01</surface_radius>
+                </torsional>
+              </friction>
+            </surface>
+          </collision>
+          <visual name='visual'>
+            <geometry>
+              <sphere>
+                <radius>0.025</radius>
+              </sphere>
+            </geometry>
+          </visual>
+          <velocity_decay>
+            <linear>0</linear>
+            <angular>0.005</angular>
+          </velocity_decay>
+        </link>
+        <pose frame=''>0 3.7 0 0 -0 0</pose>
+      </model>
+      <model name='ball_bearing_75'>
+        <link name='link'>
+          <pose frame=''>0 0 0.003 0 -0 0</pose>
+          <inertial>
+            <mass>1.1e-07</mass>
+            <inertia>
+              <ixx>3.96e-09</ixx>
+              <ixy>0</ixy>
+              <ixz>0</ixz>
+              <iyy>3.96e-09</iyy>
+              <iyz>0</iyz>
+              <izz>3.96e-09</izz>
+            </inertia>
+          </inertial>
+          <collision name='collision'>
+            <geometry>
+              <sphere>
+                <radius>0.025</radius>
+              </sphere>
+            </geometry>
+            <surface>
+              <contact>
+                <poissons_ratio>0.305</poissons_ratio>
+                <elastic_modulus>2e+11</elastic_modulus>
+                <ode>
+                  <kp>100000</kp>
+                  <kd>100</kd>
+                  <max_vel>100</max_vel>
+                  <min_depth>0.001</min_depth>
+                </ode>
+              </contact>
+              <friction>
+                <torsional>
+                  <coefficient>1</coefficient>
+                  <use_patch_radius>0</use_patch_radius>
+                  <surface_radius>0.01</surface_radius>
+                </torsional>
+              </friction>
+            </surface>
+          </collision>
+          <visual name='visual'>
+            <geometry>
+              <sphere>
+                <radius>0.025</radius>
+              </sphere>
+            </geometry>
+          </visual>
+          <velocity_decay>
+            <linear>0</linear>
+            <angular>0.005</angular>
+          </velocity_decay>
+        </link>
+        <pose frame=''>0 3.75 0 0 -0 0</pose>
+      </model>
+      <model name='ball_bearing_76'>
+        <link name='link'>
+          <pose frame=''>0 0 0.003 0 -0 0</pose>
+          <inertial>
+            <mass>1.1e-07</mass>
+            <inertia>
+              <ixx>3.96e-09</ixx>
+              <ixy>0</ixy>
+              <ixz>0</ixz>
+              <iyy>3.96e-09</iyy>
+              <iyz>0</iyz>
+              <izz>3.96e-09</izz>
+            </inertia>
+          </inertial>
+          <collision name='collision'>
+            <geometry>
+              <sphere>
+                <radius>0.025</radius>
+              </sphere>
+            </geometry>
+            <surface>
+              <contact>
+                <poissons_ratio>0.305</poissons_ratio>
+                <elastic_modulus>2e+11</elastic_modulus>
+                <ode>
+                  <kp>100000</kp>
+                  <kd>100</kd>
+                  <max_vel>100</max_vel>
+                  <min_depth>0.001</min_depth>
+                </ode>
+              </contact>
+              <friction>
+                <torsional>
+                  <coefficient>1</coefficient>
+                  <use_patch_radius>0</use_patch_radius>
+                  <surface_radius>0.01</surface_radius>
+                </torsional>
+              </friction>
+            </surface>
+          </collision>
+          <visual name='visual'>
+            <geometry>
+              <sphere>
+                <radius>0.025</radius>
+              </sphere>
+            </geometry>
+          </visual>
+          <velocity_decay>
+            <linear>0</linear>
+            <angular>0.005</angular>
+          </velocity_decay>
+        </link>
+        <pose frame=''>0 3.8 0 0 -0 0</pose>
+      </model>
+      <model name='ball_bearing_77'>
+        <link name='link'>
+          <pose frame=''>0 0 0.003 0 -0 0</pose>
+          <inertial>
+            <mass>1.1e-07</mass>
+            <inertia>
+              <ixx>3.96e-09</ixx>
+              <ixy>0</ixy>
+              <ixz>0</ixz>
+              <iyy>3.96e-09</iyy>
+              <iyz>0</iyz>
+              <izz>3.96e-09</izz>
+            </inertia>
+          </inertial>
+          <collision name='collision'>
+            <geometry>
+              <sphere>
+                <radius>0.025</radius>
+              </sphere>
+            </geometry>
+            <surface>
+              <contact>
+                <poissons_ratio>0.305</poissons_ratio>
+                <elastic_modulus>2e+11</elastic_modulus>
+                <ode>
+                  <kp>100000</kp>
+                  <kd>100</kd>
+                  <max_vel>100</max_vel>
+                  <min_depth>0.001</min_depth>
+                </ode>
+              </contact>
+              <friction>
+                <torsional>
+                  <coefficient>1</coefficient>
+                  <use_patch_radius>0</use_patch_radius>
+                  <surface_radius>0.01</surface_radius>
+                </torsional>
+              </friction>
+            </surface>
+          </collision>
+          <visual name='visual'>
+            <geometry>
+              <sphere>
+                <radius>0.025</radius>
+              </sphere>
+            </geometry>
+          </visual>
+          <velocity_decay>
+            <linear>0</linear>
+            <angular>0.005</angular>
+          </velocity_decay>
+        </link>
+        <pose frame=''>0 3.85 0 0 -0 0</pose>
+      </model>
+      <model name='ball_bearing_78'>
+        <link name='link'>
+          <pose frame=''>0 0 0.003 0 -0 0</pose>
+          <inertial>
+            <mass>1.1e-07</mass>
+            <inertia>
+              <ixx>3.96e-09</ixx>
+              <ixy>0</ixy>
+              <ixz>0</ixz>
+              <iyy>3.96e-09</iyy>
+              <iyz>0</iyz>
+              <izz>3.96e-09</izz>
+            </inertia>
+          </inertial>
+          <collision name='collision'>
+            <geometry>
+              <sphere>
+                <radius>0.025</radius>
+              </sphere>
+            </geometry>
+            <surface>
+              <contact>
+                <poissons_ratio>0.305</poissons_ratio>
+                <elastic_modulus>2e+11</elastic_modulus>
+                <ode>
+                  <kp>100000</kp>
+                  <kd>100</kd>
+                  <max_vel>100</max_vel>
+                  <min_depth>0.001</min_depth>
+                </ode>
+              </contact>
+              <friction>
+                <torsional>
+                  <coefficient>1</coefficient>
+                  <use_patch_radius>0</use_patch_radius>
+                  <surface_radius>0.01</surface_radius>
+                </torsional>
+              </friction>
+            </surface>
+          </collision>
+          <visual name='visual'>
+            <geometry>
+              <sphere>
+                <radius>0.025</radius>
+              </sphere>
+            </geometry>
+          </visual>
+          <velocity_decay>
+            <linear>0</linear>
+            <angular>0.005</angular>
+          </velocity_decay>
+        </link>
+        <pose frame=''>0 3.9 0 0 -0 0</pose>
+      </model>
+      <model name='ball_bearing_79'>
+        <link name='link'>
+          <pose frame=''>0 0 0.003 0 -0 0</pose>
+          <inertial>
+            <mass>1.1e-07</mass>
+            <inertia>
+              <ixx>3.96e-09</ixx>
+              <ixy>0</ixy>
+              <ixz>0</ixz>
+              <iyy>3.96e-09</iyy>
+              <iyz>0</iyz>
+              <izz>3.96e-09</izz>
+            </inertia>
+          </inertial>
+          <collision name='collision'>
+            <geometry>
+              <sphere>
+                <radius>0.025</radius>
+              </sphere>
+            </geometry>
+            <surface>
+              <contact>
+                <poissons_ratio>0.305</poissons_ratio>
+                <elastic_modulus>2e+11</elastic_modulus>
+                <ode>
+                  <kp>100000</kp>
+                  <kd>100</kd>
+                  <max_vel>100</max_vel>
+                  <min_depth>0.001</min_depth>
+                </ode>
+              </contact>
+              <friction>
+                <torsional>
+                  <coefficient>1</coefficient>
+                  <use_patch_radius>0</use_patch_radius>
+                  <surface_radius>0.01</surface_radius>
+                </torsional>
+              </friction>
+            </surface>
+          </collision>
+          <visual name='visual'>
+            <geometry>
+              <sphere>
+                <radius>0.025</radius>
+              </sphere>
+            </geometry>
+          </visual>
+          <velocity_decay>
+            <linear>0</linear>
+            <angular>0.005</angular>
+          </velocity_decay>
+        </link>
+        <pose frame=''>0 3.95 0 0 -0 0</pose>
+      </model>
+      <model name='ball_bearing_80'>
+        <link name='link'>
+          <pose frame=''>0 0 0.003 0 -0 0</pose>
+          <inertial>
+            <mass>1.1e-07</mass>
+            <inertia>
+              <ixx>3.96e-09</ixx>
+              <ixy>0</ixy>
+              <ixz>0</ixz>
+              <iyy>3.96e-09</iyy>
+              <iyz>0</iyz>
+              <izz>3.96e-09</izz>
+            </inertia>
+          </inertial>
+          <collision name='collision'>
+            <geometry>
+              <sphere>
+                <radius>0.025</radius>
+              </sphere>
+            </geometry>
+            <surface>
+              <contact>
+                <poissons_ratio>0.305</poissons_ratio>
+                <elastic_modulus>2e+11</elastic_modulus>
+                <ode>
+                  <kp>100000</kp>
+                  <kd>100</kd>
+                  <max_vel>100</max_vel>
+                  <min_depth>0.001</min_depth>
+                </ode>
+              </contact>
+              <friction>
+                <torsional>
+                  <coefficient>1</coefficient>
+                  <use_patch_radius>0</use_patch_radius>
+                  <surface_radius>0.01</surface_radius>
+                </torsional>
+              </friction>
+            </surface>
+          </collision>
+          <visual name='visual'>
+            <geometry>
+              <sphere>
+                <radius>0.025</radius>
+              </sphere>
+            </geometry>
+          </visual>
+          <velocity_decay>
+            <linear>0</linear>
+            <angular>0.005</angular>
+          </velocity_decay>
+        </link>
+        <pose frame=''>0 4 0 0 -0 0</pose>
+      </model>
+      <model name='ball_bearing_81'>
+        <link name='link'>
+          <pose frame=''>0 0 0.003 0 -0 0</pose>
+          <inertial>
+            <mass>1.1e-07</mass>
+            <inertia>
+              <ixx>3.96e-09</ixx>
+              <ixy>0</ixy>
+              <ixz>0</ixz>
+              <iyy>3.96e-09</iyy>
+              <iyz>0</iyz>
+              <izz>3.96e-09</izz>
+            </inertia>
+          </inertial>
+          <collision name='collision'>
+            <geometry>
+              <sphere>
+                <radius>0.025</radius>
+              </sphere>
+            </geometry>
+            <surface>
+              <contact>
+                <poissons_ratio>0.305</poissons_ratio>
+                <elastic_modulus>2e+11</elastic_modulus>
+                <ode>
+                  <kp>100000</kp>
+                  <kd>100</kd>
+                  <max_vel>100</max_vel>
+                  <min_depth>0.001</min_depth>
+                </ode>
+              </contact>
+              <friction>
+                <torsional>
+                  <coefficient>1</coefficient>
+                  <use_patch_radius>0</use_patch_radius>
+                  <surface_radius>0.01</surface_radius>
+                </torsional>
+              </friction>
+            </surface>
+          </collision>
+          <visual name='visual'>
+            <geometry>
+              <sphere>
+                <radius>0.025</radius>
+              </sphere>
+            </geometry>
+          </visual>
+          <velocity_decay>
+            <linear>0</linear>
+            <angular>0.005</angular>
+          </velocity_decay>
+        </link>
+        <pose frame=''>0 4.05 0 0 -0 0</pose>
+      </model>
+      <model name='ball_bearing_82'>
+        <link name='link'>
+          <pose frame=''>0 0 0.003 0 -0 0</pose>
+          <inertial>
+            <mass>1.1e-07</mass>
+            <inertia>
+              <ixx>3.96e-09</ixx>
+              <ixy>0</ixy>
+              <ixz>0</ixz>
+              <iyy>3.96e-09</iyy>
+              <iyz>0</iyz>
+              <izz>3.96e-09</izz>
+            </inertia>
+          </inertial>
+          <collision name='collision'>
+            <geometry>
+              <sphere>
+                <radius>0.025</radius>
+              </sphere>
+            </geometry>
+            <surface>
+              <contact>
+                <poissons_ratio>0.305</poissons_ratio>
+                <elastic_modulus>2e+11</elastic_modulus>
+                <ode>
+                  <kp>100000</kp>
+                  <kd>100</kd>
+                  <max_vel>100</max_vel>
+                  <min_depth>0.001</min_depth>
+                </ode>
+              </contact>
+              <friction>
+                <torsional>
+                  <coefficient>1</coefficient>
+                  <use_patch_radius>0</use_patch_radius>
+                  <surface_radius>0.01</surface_radius>
+                </torsional>
+              </friction>
+            </surface>
+          </collision>
+          <visual name='visual'>
+            <geometry>
+              <sphere>
+                <radius>0.025</radius>
+              </sphere>
+            </geometry>
+          </visual>
+          <velocity_decay>
+            <linear>0</linear>
+            <angular>0.005</angular>
+          </velocity_decay>
+        </link>
+        <pose frame=''>0 4.1 0 0 -0 0</pose>
+      </model>
+      <model name='ball_bearing_83'>
+        <link name='link'>
+          <pose frame=''>0 0 0.003 0 -0 0</pose>
+          <inertial>
+            <mass>1.1e-07</mass>
+            <inertia>
+              <ixx>3.96e-09</ixx>
+              <ixy>0</ixy>
+              <ixz>0</ixz>
+              <iyy>3.96e-09</iyy>
+              <iyz>0</iyz>
+              <izz>3.96e-09</izz>
+            </inertia>
+          </inertial>
+          <collision name='collision'>
+            <geometry>
+              <sphere>
+                <radius>0.025</radius>
+              </sphere>
+            </geometry>
+            <surface>
+              <contact>
+                <poissons_ratio>0.305</poissons_ratio>
+                <elastic_modulus>2e+11</elastic_modulus>
+                <ode>
+                  <kp>100000</kp>
+                  <kd>100</kd>
+                  <max_vel>100</max_vel>
+                  <min_depth>0.001</min_depth>
+                </ode>
+              </contact>
+              <friction>
+                <torsional>
+                  <coefficient>1</coefficient>
+                  <use_patch_radius>0</use_patch_radius>
+                  <surface_radius>0.01</surface_radius>
+                </torsional>
+              </friction>
+            </surface>
+          </collision>
+          <visual name='visual'>
+            <geometry>
+              <sphere>
+                <radius>0.025</radius>
+              </sphere>
+            </geometry>
+          </visual>
+          <velocity_decay>
+            <linear>0</linear>
+            <angular>0.005</angular>
+          </velocity_decay>
+        </link>
+        <pose frame=''>0 4.15 0 0 -0 0</pose>
+      </model>
+      <model name='ball_bearing_84'>
+        <link name='link'>
+          <pose frame=''>0 0 0.003 0 -0 0</pose>
+          <inertial>
+            <mass>1.1e-07</mass>
+            <inertia>
+              <ixx>3.96e-09</ixx>
+              <ixy>0</ixy>
+              <ixz>0</ixz>
+              <iyy>3.96e-09</iyy>
+              <iyz>0</iyz>
+              <izz>3.96e-09</izz>
+            </inertia>
+          </inertial>
+          <collision name='collision'>
+            <geometry>
+              <sphere>
+                <radius>0.025</radius>
+              </sphere>
+            </geometry>
+            <surface>
+              <contact>
+                <poissons_ratio>0.305</poissons_ratio>
+                <elastic_modulus>2e+11</elastic_modulus>
+                <ode>
+                  <kp>100000</kp>
+                  <kd>100</kd>
+                  <max_vel>100</max_vel>
+                  <min_depth>0.001</min_depth>
+                </ode>
+              </contact>
+              <friction>
+                <torsional>
+                  <coefficient>1</coefficient>
+                  <use_patch_radius>0</use_patch_radius>
+                  <surface_radius>0.01</surface_radius>
+                </torsional>
+              </friction>
+            </surface>
+          </collision>
+          <visual name='visual'>
+            <geometry>
+              <sphere>
+                <radius>0.025</radius>
+              </sphere>
+            </geometry>
+          </visual>
+          <velocity_decay>
+            <linear>0</linear>
+            <angular>0.005</angular>
+          </velocity_decay>
+        </link>
+        <pose frame=''>0 4.2 0 0 -0 0</pose>
+      </model>
+      <model name='ball_bearing_85'>
+        <link name='link'>
+          <pose frame=''>0 0 0.003 0 -0 0</pose>
+          <inertial>
+            <mass>1.1e-07</mass>
+            <inertia>
+              <ixx>3.96e-09</ixx>
+              <ixy>0</ixy>
+              <ixz>0</ixz>
+              <iyy>3.96e-09</iyy>
+              <iyz>0</iyz>
+              <izz>3.96e-09</izz>
+            </inertia>
+          </inertial>
+          <collision name='collision'>
+            <geometry>
+              <sphere>
+                <radius>0.025</radius>
+              </sphere>
+            </geometry>
+            <surface>
+              <contact>
+                <poissons_ratio>0.305</poissons_ratio>
+                <elastic_modulus>2e+11</elastic_modulus>
+                <ode>
+                  <kp>100000</kp>
+                  <kd>100</kd>
+                  <max_vel>100</max_vel>
+                  <min_depth>0.001</min_depth>
+                </ode>
+              </contact>
+              <friction>
+                <torsional>
+                  <coefficient>1</coefficient>
+                  <use_patch_radius>0</use_patch_radius>
+                  <surface_radius>0.01</surface_radius>
+                </torsional>
+              </friction>
+            </surface>
+          </collision>
+          <visual name='visual'>
+            <geometry>
+              <sphere>
+                <radius>0.025</radius>
+              </sphere>
+            </geometry>
+          </visual>
+          <velocity_decay>
+            <linear>0</linear>
+            <angular>0.005</angular>
+          </velocity_decay>
+        </link>
+        <pose frame=''>0 4.25 0 0 -0 0</pose>
+      </model>
+      <model name='ball_bearing_86'>
+        <link name='link'>
+          <pose frame=''>0 0 0.003 0 -0 0</pose>
+          <inertial>
+            <mass>1.1e-07</mass>
+            <inertia>
+              <ixx>3.96e-09</ixx>
+              <ixy>0</ixy>
+              <ixz>0</ixz>
+              <iyy>3.96e-09</iyy>
+              <iyz>0</iyz>
+              <izz>3.96e-09</izz>
+            </inertia>
+          </inertial>
+          <collision name='collision'>
+            <geometry>
+              <sphere>
+                <radius>0.025</radius>
+              </sphere>
+            </geometry>
+            <surface>
+              <contact>
+                <poissons_ratio>0.305</poissons_ratio>
+                <elastic_modulus>2e+11</elastic_modulus>
+                <ode>
+                  <kp>100000</kp>
+                  <kd>100</kd>
+                  <max_vel>100</max_vel>
+                  <min_depth>0.001</min_depth>
+                </ode>
+              </contact>
+              <friction>
+                <torsional>
+                  <coefficient>1</coefficient>
+                  <use_patch_radius>0</use_patch_radius>
+                  <surface_radius>0.01</surface_radius>
+                </torsional>
+              </friction>
+            </surface>
+          </collision>
+          <visual name='visual'>
+            <geometry>
+              <sphere>
+                <radius>0.025</radius>
+              </sphere>
+            </geometry>
+          </visual>
+          <velocity_decay>
+            <linear>0</linear>
+            <angular>0.005</angular>
+          </velocity_decay>
+        </link>
+        <pose frame=''>0 4.3 0 0 -0 0</pose>
+      </model>
+      <model name='ball_bearing_87'>
+        <link name='link'>
+          <pose frame=''>0 0 0.003 0 -0 0</pose>
+          <inertial>
+            <mass>1.1e-07</mass>
+            <inertia>
+              <ixx>3.96e-09</ixx>
+              <ixy>0</ixy>
+              <ixz>0</ixz>
+              <iyy>3.96e-09</iyy>
+              <iyz>0</iyz>
+              <izz>3.96e-09</izz>
+            </inertia>
+          </inertial>
+          <collision name='collision'>
+            <geometry>
+              <sphere>
+                <radius>0.025</radius>
+              </sphere>
+            </geometry>
+            <surface>
+              <contact>
+                <poissons_ratio>0.305</poissons_ratio>
+                <elastic_modulus>2e+11</elastic_modulus>
+                <ode>
+                  <kp>100000</kp>
+                  <kd>100</kd>
+                  <max_vel>100</max_vel>
+                  <min_depth>0.001</min_depth>
+                </ode>
+              </contact>
+              <friction>
+                <torsional>
+                  <coefficient>1</coefficient>
+                  <use_patch_radius>0</use_patch_radius>
+                  <surface_radius>0.01</surface_radius>
+                </torsional>
+              </friction>
+            </surface>
+          </collision>
+          <visual name='visual'>
+            <geometry>
+              <sphere>
+                <radius>0.025</radius>
+              </sphere>
+            </geometry>
+          </visual>
+          <velocity_decay>
+            <linear>0</linear>
+            <angular>0.005</angular>
+          </velocity_decay>
+        </link>
+        <pose frame=''>0 4.35 0 0 -0 0</pose>
+      </model>
+      <model name='ball_bearing_88'>
+        <link name='link'>
+          <pose frame=''>0 0 0.003 0 -0 0</pose>
+          <inertial>
+            <mass>1.1e-07</mass>
+            <inertia>
+              <ixx>3.96e-09</ixx>
+              <ixy>0</ixy>
+              <ixz>0</ixz>
+              <iyy>3.96e-09</iyy>
+              <iyz>0</iyz>
+              <izz>3.96e-09</izz>
+            </inertia>
+          </inertial>
+          <collision name='collision'>
+            <geometry>
+              <sphere>
+                <radius>0.025</radius>
+              </sphere>
+            </geometry>
+            <surface>
+              <contact>
+                <poissons_ratio>0.305</poissons_ratio>
+                <elastic_modulus>2e+11</elastic_modulus>
+                <ode>
+                  <kp>100000</kp>
+                  <kd>100</kd>
+                  <max_vel>100</max_vel>
+                  <min_depth>0.001</min_depth>
+                </ode>
+              </contact>
+              <friction>
+                <torsional>
+                  <coefficient>1</coefficient>
+                  <use_patch_radius>0</use_patch_radius>
+                  <surface_radius>0.01</surface_radius>
+                </torsional>
+              </friction>
+            </surface>
+          </collision>
+          <visual name='visual'>
+            <geometry>
+              <sphere>
+                <radius>0.025</radius>
+              </sphere>
+            </geometry>
+          </visual>
+          <velocity_decay>
+            <linear>0</linear>
+            <angular>0.005</angular>
+          </velocity_decay>
+        </link>
+        <pose frame=''>0 4.4 0 0 -0 0</pose>
+      </model>
+      <model name='ball_bearing_89'>
+        <link name='link'>
+          <pose frame=''>0 0 0.003 0 -0 0</pose>
+          <inertial>
+            <mass>1.1e-07</mass>
+            <inertia>
+              <ixx>3.96e-09</ixx>
+              <ixy>0</ixy>
+              <ixz>0</ixz>
+              <iyy>3.96e-09</iyy>
+              <iyz>0</iyz>
+              <izz>3.96e-09</izz>
+            </inertia>
+          </inertial>
+          <collision name='collision'>
+            <geometry>
+              <sphere>
+                <radius>0.025</radius>
+              </sphere>
+            </geometry>
+            <surface>
+              <contact>
+                <poissons_ratio>0.305</poissons_ratio>
+                <elastic_modulus>2e+11</elastic_modulus>
+                <ode>
+                  <kp>100000</kp>
+                  <kd>100</kd>
+                  <max_vel>100</max_vel>
+                  <min_depth>0.001</min_depth>
+                </ode>
+              </contact>
+              <friction>
+                <torsional>
+                  <coefficient>1</coefficient>
+                  <use_patch_radius>0</use_patch_radius>
+                  <surface_radius>0.01</surface_radius>
+                </torsional>
+              </friction>
+            </surface>
+          </collision>
+          <visual name='visual'>
+            <geometry>
+              <sphere>
+                <radius>0.025</radius>
+              </sphere>
+            </geometry>
+          </visual>
+          <velocity_decay>
+            <linear>0</linear>
+            <angular>0.005</angular>
+          </velocity_decay>
+        </link>
+        <pose frame=''>0 4.45 0 0 -0 0</pose>
+      </model>
+      <model name='ball_bearing_90'>
+        <link name='link'>
+          <pose frame=''>0 0 0.003 0 -0 0</pose>
+          <inertial>
+            <mass>1.1e-07</mass>
+            <inertia>
+              <ixx>3.96e-09</ixx>
+              <ixy>0</ixy>
+              <ixz>0</ixz>
+              <iyy>3.96e-09</iyy>
+              <iyz>0</iyz>
+              <izz>3.96e-09</izz>
+            </inertia>
+          </inertial>
+          <collision name='collision'>
+            <geometry>
+              <sphere>
+                <radius>0.025</radius>
+              </sphere>
+            </geometry>
+            <surface>
+              <contact>
+                <poissons_ratio>0.305</poissons_ratio>
+                <elastic_modulus>2e+11</elastic_modulus>
+                <ode>
+                  <kp>100000</kp>
+                  <kd>100</kd>
+                  <max_vel>100</max_vel>
+                  <min_depth>0.001</min_depth>
+                </ode>
+              </contact>
+              <friction>
+                <torsional>
+                  <coefficient>1</coefficient>
+                  <use_patch_radius>0</use_patch_radius>
+                  <surface_radius>0.01</surface_radius>
+                </torsional>
+              </friction>
+            </surface>
+          </collision>
+          <visual name='visual'>
+            <geometry>
+              <sphere>
+                <radius>0.025</radius>
+              </sphere>
+            </geometry>
+          </visual>
+          <velocity_decay>
+            <linear>0</linear>
+            <angular>0.005</angular>
+          </velocity_decay>
+        </link>
+        <pose frame=''>0 4.5 0 0 -0 0</pose>
+      </model>
+      <model name='ball_bearing_91'>
+        <link name='link'>
+          <pose frame=''>0 0 0.003 0 -0 0</pose>
+          <inertial>
+            <mass>1.1e-07</mass>
+            <inertia>
+              <ixx>3.96e-09</ixx>
+              <ixy>0</ixy>
+              <ixz>0</ixz>
+              <iyy>3.96e-09</iyy>
+              <iyz>0</iyz>
+              <izz>3.96e-09</izz>
+            </inertia>
+          </inertial>
+          <collision name='collision'>
+            <geometry>
+              <sphere>
+                <radius>0.025</radius>
+              </sphere>
+            </geometry>
+            <surface>
+              <contact>
+                <poissons_ratio>0.305</poissons_ratio>
+                <elastic_modulus>2e+11</elastic_modulus>
+                <ode>
+                  <kp>100000</kp>
+                  <kd>100</kd>
+                  <max_vel>100</max_vel>
+                  <min_depth>0.001</min_depth>
+                </ode>
+              </contact>
+              <friction>
+                <torsional>
+                  <coefficient>1</coefficient>
+                  <use_patch_radius>0</use_patch_radius>
+                  <surface_radius>0.01</surface_radius>
+                </torsional>
+              </friction>
+            </surface>
+          </collision>
+          <visual name='visual'>
+            <geometry>
+              <sphere>
+                <radius>0.025</radius>
+              </sphere>
+            </geometry>
+          </visual>
+          <velocity_decay>
+            <linear>0</linear>
+            <angular>0.005</angular>
+          </velocity_decay>
+        </link>
+        <pose frame=''>0 4.55 0 0 -0 0</pose>
+      </model>
+      <model name='ball_bearing_92'>
+        <link name='link'>
+          <pose frame=''>0 0 0.003 0 -0 0</pose>
+          <inertial>
+            <mass>1.1e-07</mass>
+            <inertia>
+              <ixx>3.96e-09</ixx>
+              <ixy>0</ixy>
+              <ixz>0</ixz>
+              <iyy>3.96e-09</iyy>
+              <iyz>0</iyz>
+              <izz>3.96e-09</izz>
+            </inertia>
+          </inertial>
+          <collision name='collision'>
+            <geometry>
+              <sphere>
+                <radius>0.025</radius>
+              </sphere>
+            </geometry>
+            <surface>
+              <contact>
+                <poissons_ratio>0.305</poissons_ratio>
+                <elastic_modulus>2e+11</elastic_modulus>
+                <ode>
+                  <kp>100000</kp>
+                  <kd>100</kd>
+                  <max_vel>100</max_vel>
+                  <min_depth>0.001</min_depth>
+                </ode>
+              </contact>
+              <friction>
+                <torsional>
+                  <coefficient>1</coefficient>
+                  <use_patch_radius>0</use_patch_radius>
+                  <surface_radius>0.01</surface_radius>
+                </torsional>
+              </friction>
+            </surface>
+          </collision>
+          <visual name='visual'>
+            <geometry>
+              <sphere>
+                <radius>0.025</radius>
+              </sphere>
+            </geometry>
+          </visual>
+          <velocity_decay>
+            <linear>0</linear>
+            <angular>0.005</angular>
+          </velocity_decay>
+        </link>
+        <pose frame=''>0 4.6 0 0 -0 0</pose>
+      </model>
+      <model name='ball_bearing_93'>
+        <link name='link'>
+          <pose frame=''>0 0 0.003 0 -0 0</pose>
+          <inertial>
+            <mass>1.1e-07</mass>
+            <inertia>
+              <ixx>3.96e-09</ixx>
+              <ixy>0</ixy>
+              <ixz>0</ixz>
+              <iyy>3.96e-09</iyy>
+              <iyz>0</iyz>
+              <izz>3.96e-09</izz>
+            </inertia>
+          </inertial>
+          <collision name='collision'>
+            <geometry>
+              <sphere>
+                <radius>0.025</radius>
+              </sphere>
+            </geometry>
+            <surface>
+              <contact>
+                <poissons_ratio>0.305</poissons_ratio>
+                <elastic_modulus>2e+11</elastic_modulus>
+                <ode>
+                  <kp>100000</kp>
+                  <kd>100</kd>
+                  <max_vel>100</max_vel>
+                  <min_depth>0.001</min_depth>
+                </ode>
+              </contact>
+              <friction>
+                <torsional>
+                  <coefficient>1</coefficient>
+                  <use_patch_radius>0</use_patch_radius>
+                  <surface_radius>0.01</surface_radius>
+                </torsional>
+              </friction>
+            </surface>
+          </collision>
+          <visual name='visual'>
+            <geometry>
+              <sphere>
+                <radius>0.025</radius>
+              </sphere>
+            </geometry>
+          </visual>
+          <velocity_decay>
+            <linear>0</linear>
+            <angular>0.005</angular>
+          </velocity_decay>
+        </link>
+        <pose frame=''>0 4.65 0 0 -0 0</pose>
+      </model>
+      <model name='ball_bearing_94'>
+        <link name='link'>
+          <pose frame=''>0 0 0.003 0 -0 0</pose>
+          <inertial>
+            <mass>1.1e-07</mass>
+            <inertia>
+              <ixx>3.96e-09</ixx>
+              <ixy>0</ixy>
+              <ixz>0</ixz>
+              <iyy>3.96e-09</iyy>
+              <iyz>0</iyz>
+              <izz>3.96e-09</izz>
+            </inertia>
+          </inertial>
+          <collision name='collision'>
+            <geometry>
+              <sphere>
+                <radius>0.025</radius>
+              </sphere>
+            </geometry>
+            <surface>
+              <contact>
+                <poissons_ratio>0.305</poissons_ratio>
+                <elastic_modulus>2e+11</elastic_modulus>
+                <ode>
+                  <kp>100000</kp>
+                  <kd>100</kd>
+                  <max_vel>100</max_vel>
+                  <min_depth>0.001</min_depth>
+                </ode>
+              </contact>
+              <friction>
+                <torsional>
+                  <coefficient>1</coefficient>
+                  <use_patch_radius>0</use_patch_radius>
+                  <surface_radius>0.01</surface_radius>
+                </torsional>
+              </friction>
+            </surface>
+          </collision>
+          <visual name='visual'>
+            <geometry>
+              <sphere>
+                <radius>0.025</radius>
+              </sphere>
+            </geometry>
+          </visual>
+          <velocity_decay>
+            <linear>0</linear>
+            <angular>0.005</angular>
+          </velocity_decay>
+        </link>
+        <pose frame=''>0 4.7 0 0 -0 0</pose>
+      </model>
+      <model name='ball_bearing_95'>
+        <link name='link'>
+          <pose frame=''>0 0 0.003 0 -0 0</pose>
+          <inertial>
+            <mass>1.1e-07</mass>
+            <inertia>
+              <ixx>3.96e-09</ixx>
+              <ixy>0</ixy>
+              <ixz>0</ixz>
+              <iyy>3.96e-09</iyy>
+              <iyz>0</iyz>
+              <izz>3.96e-09</izz>
+            </inertia>
+          </inertial>
+          <collision name='collision'>
+            <geometry>
+              <sphere>
+                <radius>0.025</radius>
+              </sphere>
+            </geometry>
+            <surface>
+              <contact>
+                <poissons_ratio>0.305</poissons_ratio>
+                <elastic_modulus>2e+11</elastic_modulus>
+                <ode>
+                  <kp>100000</kp>
+                  <kd>100</kd>
+                  <max_vel>100</max_vel>
+                  <min_depth>0.001</min_depth>
+                </ode>
+              </contact>
+              <friction>
+                <torsional>
+                  <coefficient>1</coefficient>
+                  <use_patch_radius>0</use_patch_radius>
+                  <surface_radius>0.01</surface_radius>
+                </torsional>
+              </friction>
+            </surface>
+          </collision>
+          <visual name='visual'>
+            <geometry>
+              <sphere>
+                <radius>0.025</radius>
+              </sphere>
+            </geometry>
+          </visual>
+          <velocity_decay>
+            <linear>0</linear>
+            <angular>0.005</angular>
+          </velocity_decay>
+        </link>
+        <pose frame=''>0 4.75 0 0 -0 0</pose>
+      </model>
+      <model name='ball_bearing_96'>
+        <link name='link'>
+          <pose frame=''>0 0 0.003 0 -0 0</pose>
+          <inertial>
+            <mass>1.1e-07</mass>
+            <inertia>
+              <ixx>3.96e-09</ixx>
+              <ixy>0</ixy>
+              <ixz>0</ixz>
+              <iyy>3.96e-09</iyy>
+              <iyz>0</iyz>
+              <izz>3.96e-09</izz>
+            </inertia>
+          </inertial>
+          <collision name='collision'>
+            <geometry>
+              <sphere>
+                <radius>0.025</radius>
+              </sphere>
+            </geometry>
+            <surface>
+              <contact>
+                <poissons_ratio>0.305</poissons_ratio>
+                <elastic_modulus>2e+11</elastic_modulus>
+                <ode>
+                  <kp>100000</kp>
+                  <kd>100</kd>
+                  <max_vel>100</max_vel>
+                  <min_depth>0.001</min_depth>
+                </ode>
+              </contact>
+              <friction>
+                <torsional>
+                  <coefficient>1</coefficient>
+                  <use_patch_radius>0</use_patch_radius>
+                  <surface_radius>0.01</surface_radius>
+                </torsional>
+              </friction>
+            </surface>
+          </collision>
+          <visual name='visual'>
+            <geometry>
+              <sphere>
+                <radius>0.025</radius>
+              </sphere>
+            </geometry>
+          </visual>
+          <velocity_decay>
+            <linear>0</linear>
+            <angular>0.005</angular>
+          </velocity_decay>
+        </link>
+        <pose frame=''>0 4.8 0 0 -0 0</pose>
+      </model>
+      <model name='ball_bearing_97'>
+        <link name='link'>
+          <pose frame=''>0 0 0.003 0 -0 0</pose>
+          <inertial>
+            <mass>1.1e-07</mass>
+            <inertia>
+              <ixx>3.96e-09</ixx>
+              <ixy>0</ixy>
+              <ixz>0</ixz>
+              <iyy>3.96e-09</iyy>
+              <iyz>0</iyz>
+              <izz>3.96e-09</izz>
+            </inertia>
+          </inertial>
+          <collision name='collision'>
+            <geometry>
+              <sphere>
+                <radius>0.025</radius>
+              </sphere>
+            </geometry>
+            <surface>
+              <contact>
+                <poissons_ratio>0.305</poissons_ratio>
+                <elastic_modulus>2e+11</elastic_modulus>
+                <ode>
+                  <kp>100000</kp>
+                  <kd>100</kd>
+                  <max_vel>100</max_vel>
+                  <min_depth>0.001</min_depth>
+                </ode>
+              </contact>
+              <friction>
+                <torsional>
+                  <coefficient>1</coefficient>
+                  <use_patch_radius>0</use_patch_radius>
+                  <surface_radius>0.01</surface_radius>
+                </torsional>
+              </friction>
+            </surface>
+          </collision>
+          <visual name='visual'>
+            <geometry>
+              <sphere>
+                <radius>0.025</radius>
+              </sphere>
+            </geometry>
+          </visual>
+          <velocity_decay>
+            <linear>0</linear>
+            <angular>0.005</angular>
+          </velocity_decay>
+        </link>
+        <pose frame=''>0 4.85 0 0 -0 0</pose>
+      </model>
+      <model name='ball_bearing_98'>
+        <link name='link'>
+          <pose frame=''>0 0 0.003 0 -0 0</pose>
+          <inertial>
+            <mass>1.1e-07</mass>
+            <inertia>
+              <ixx>3.96e-09</ixx>
+              <ixy>0</ixy>
+              <ixz>0</ixz>
+              <iyy>3.96e-09</iyy>
+              <iyz>0</iyz>
+              <izz>3.96e-09</izz>
+            </inertia>
+          </inertial>
+          <collision name='collision'>
+            <geometry>
+              <sphere>
+                <radius>0.025</radius>
+              </sphere>
+            </geometry>
+            <surface>
+              <contact>
+                <poissons_ratio>0.305</poissons_ratio>
+                <elastic_modulus>2e+11</elastic_modulus>
+                <ode>
+                  <kp>100000</kp>
+                  <kd>100</kd>
+                  <max_vel>100</max_vel>
+                  <min_depth>0.001</min_depth>
+                </ode>
+              </contact>
+              <friction>
+                <torsional>
+                  <coefficient>1</coefficient>
+                  <use_patch_radius>0</use_patch_radius>
+                  <surface_radius>0.01</surface_radius>
+                </torsional>
+              </friction>
+            </surface>
+          </collision>
+          <visual name='visual'>
+            <geometry>
+              <sphere>
+                <radius>0.025</radius>
+              </sphere>
+            </geometry>
+          </visual>
+          <velocity_decay>
+            <linear>0</linear>
+            <angular>0.005</angular>
+          </velocity_decay>
+        </link>
+        <pose frame=''>0 4.9 0 0 -0 0</pose>
+      </model>
+      <model name='ball_bearing_99'>
+        <link name='link'>
+          <pose frame=''>0 0 0.003 0 -0 0</pose>
+          <inertial>
+            <mass>1.1e-07</mass>
+            <inertia>
+              <ixx>3.96e-09</ixx>
+              <ixy>0</ixy>
+              <ixz>0</ixz>
+              <iyy>3.96e-09</iyy>
+              <iyz>0</iyz>
+              <izz>3.96e-09</izz>
+            </inertia>
+          </inertial>
+          <collision name='collision'>
+            <geometry>
+              <sphere>
+                <radius>0.025</radius>
+              </sphere>
+            </geometry>
+            <surface>
+              <contact>
+                <poissons_ratio>0.305</poissons_ratio>
+                <elastic_modulus>2e+11</elastic_modulus>
+                <ode>
+                  <kp>100000</kp>
+                  <kd>100</kd>
+                  <max_vel>100</max_vel>
+                  <min_depth>0.001</min_depth>
+                </ode>
+              </contact>
+              <friction>
+                <torsional>
+                  <coefficient>1</coefficient>
+                  <use_patch_radius>0</use_patch_radius>
+                  <surface_radius>0.01</surface_radius>
+                </torsional>
+              </friction>
+            </surface>
+          </collision>
+          <visual name='visual'>
+            <geometry>
+              <sphere>
+                <radius>0.025</radius>
+              </sphere>
+            </geometry>
+          </visual>
+          <velocity_decay>
+            <linear>0</linear>
+            <angular>0.005</angular>
+          </velocity_decay>
+        </link>
+        <pose frame=''>0 4.95 0 0 -0 0</pose>
+      </model>
       <joint name='link_JOINT_1' type='ball'>
         <parent>ball_bearing_0::link</parent>
         <child>ball_bearing_1::link</child>
@@ -1165,12 +6025,372 @@
         <child>ball_bearing_9::link</child>
       </joint>
       <joint name='link_JOINT_10' type='ball'>
+        <parent>ball_bearing_9::link</parent>
+        <child>ball_bearing_10::link</child>
+      </joint>
+      <joint name='link_JOINT_11' type='ball'>
+        <parent>ball_bearing_10::link</parent>
+        <child>ball_bearing_11::link</child>
+      </joint>
+      <joint name='link_JOINT_12' type='ball'>
+        <parent>ball_bearing_11::link</parent>
+        <child>ball_bearing_12::link</child>
+      </joint>
+      <joint name='link_JOINT_13' type='ball'>
+        <parent>ball_bearing_12::link</parent>
+        <child>ball_bearing_13::link</child>
+      </joint>
+      <joint name='link_JOINT_14' type='ball'>
+        <parent>ball_bearing_13::link</parent>
+        <child>ball_bearing_14::link</child>
+      </joint>
+      <joint name='link_JOINT_15' type='ball'>
+        <parent>ball_bearing_14::link</parent>
+        <child>ball_bearing_15::link</child>
+      </joint>
+      <joint name='link_JOINT_16' type='ball'>
+        <parent>ball_bearing_15::link</parent>
+        <child>ball_bearing_16::link</child>
+      </joint>
+      <joint name='link_JOINT_17' type='ball'>
+        <parent>ball_bearing_16::link</parent>
+        <child>ball_bearing_17::link</child>
+      </joint>
+      <joint name='link_JOINT_18' type='ball'>
+        <parent>ball_bearing_17::link</parent>
+        <child>ball_bearing_18::link</child>
+      </joint>
+      <joint name='link_JOINT_19' type='ball'>
+        <parent>ball_bearing_18::link</parent>
+        <child>ball_bearing_19::link</child>
+      </joint>
+      <joint name='link_JOINT_20' type='ball'>
+        <parent>ball_bearing_19::link</parent>
+        <child>ball_bearing_20::link</child>
+      </joint>
+      <joint name='link_JOINT_21' type='ball'>
+        <parent>ball_bearing_20::link</parent>
+        <child>ball_bearing_21::link</child>
+      </joint>
+      <joint name='link_JOINT_22' type='ball'>
+        <parent>ball_bearing_21::link</parent>
+        <child>ball_bearing_22::link</child>
+      </joint>
+      <joint name='link_JOINT_23' type='ball'>
+        <parent>ball_bearing_22::link</parent>
+        <child>ball_bearing_23::link</child>
+      </joint>
+      <joint name='link_JOINT_24' type='ball'>
+        <parent>ball_bearing_23::link</parent>
+        <child>ball_bearing_24::link</child>
+      </joint>
+      <joint name='link_JOINT_25' type='ball'>
+        <parent>ball_bearing_24::link</parent>
+        <child>ball_bearing_25::link</child>
+      </joint>
+      <joint name='link_JOINT_26' type='ball'>
+        <parent>ball_bearing_25::link</parent>
+        <child>ball_bearing_26::link</child>
+      </joint>
+      <joint name='link_JOINT_27' type='ball'>
+        <parent>ball_bearing_26::link</parent>
+        <child>ball_bearing_27::link</child>
+      </joint>
+      <joint name='link_JOINT_28' type='ball'>
+        <parent>ball_bearing_27::link</parent>
+        <child>ball_bearing_28::link</child>
+      </joint>
+      <joint name='link_JOINT_29' type='ball'>
+        <parent>ball_bearing_28::link</parent>
+        <child>ball_bearing_29::link</child>
+      </joint>
+      <joint name='link_JOINT_30' type='ball'>
+        <parent>ball_bearing_29::link</parent>
+        <child>ball_bearing_30::link</child>
+      </joint>
+      <joint name='link_JOINT_31' type='ball'>
+        <parent>ball_bearing_30::link</parent>
+        <child>ball_bearing_31::link</child>
+      </joint>
+      <joint name='link_JOINT_32' type='ball'>
+        <parent>ball_bearing_31::link</parent>
+        <child>ball_bearing_32::link</child>
+      </joint>
+      <joint name='link_JOINT_33' type='ball'>
+        <parent>ball_bearing_32::link</parent>
+        <child>ball_bearing_33::link</child>
+      </joint>
+      <joint name='link_JOINT_34' type='ball'>
+        <parent>ball_bearing_33::link</parent>
+        <child>ball_bearing_34::link</child>
+      </joint>
+      <joint name='link_JOINT_35' type='ball'>
+        <parent>ball_bearing_34::link</parent>
+        <child>ball_bearing_35::link</child>
+      </joint>
+      <joint name='link_JOINT_36' type='ball'>
+        <parent>ball_bearing_35::link</parent>
+        <child>ball_bearing_36::link</child>
+      </joint>
+      <joint name='link_JOINT_37' type='ball'>
+        <parent>ball_bearing_36::link</parent>
+        <child>ball_bearing_37::link</child>
+      </joint>
+      <joint name='link_JOINT_38' type='ball'>
+        <parent>ball_bearing_37::link</parent>
+        <child>ball_bearing_38::link</child>
+      </joint>
+      <joint name='link_JOINT_39' type='ball'>
+        <parent>ball_bearing_38::link</parent>
+        <child>ball_bearing_39::link</child>
+      </joint>
+      <joint name='link_JOINT_40' type='ball'>
+        <parent>ball_bearing_39::link</parent>
+        <child>ball_bearing_40::link</child>
+      </joint>
+      <joint name='link_JOINT_41' type='ball'>
+        <parent>ball_bearing_40::link</parent>
+        <child>ball_bearing_41::link</child>
+      </joint>
+      <joint name='link_JOINT_42' type='ball'>
+        <parent>ball_bearing_41::link</parent>
+        <child>ball_bearing_42::link</child>
+      </joint>
+      <joint name='link_JOINT_43' type='ball'>
+        <parent>ball_bearing_42::link</parent>
+        <child>ball_bearing_43::link</child>
+      </joint>
+      <joint name='link_JOINT_44' type='ball'>
+        <parent>ball_bearing_43::link</parent>
+        <child>ball_bearing_44::link</child>
+      </joint>
+      <joint name='link_JOINT_45' type='ball'>
+        <parent>ball_bearing_44::link</parent>
+        <child>ball_bearing_45::link</child>
+      </joint>
+      <joint name='link_JOINT_46' type='ball'>
+        <parent>ball_bearing_45::link</parent>
+        <child>ball_bearing_46::link</child>
+      </joint>
+      <joint name='link_JOINT_47' type='ball'>
+        <parent>ball_bearing_46::link</parent>
+        <child>ball_bearing_47::link</child>
+      </joint>
+      <joint name='link_JOINT_48' type='ball'>
+        <parent>ball_bearing_47::link</parent>
+        <child>ball_bearing_48::link</child>
+      </joint>
+      <joint name='link_JOINT_49' type='ball'>
+        <parent>ball_bearing_48::link</parent>
+        <child>ball_bearing_49::link</child>
+      </joint>
+      <joint name='link_JOINT_50' type='ball'>
+        <parent>ball_bearing_49::link</parent>
+        <child>ball_bearing_50::link</child>
+      </joint>
+      <joint name='link_JOINT_51' type='ball'>
+        <parent>ball_bearing_50::link</parent>
+        <child>ball_bearing_51::link</child>
+      </joint>
+      <joint name='link_JOINT_52' type='ball'>
+        <parent>ball_bearing_51::link</parent>
+        <child>ball_bearing_52::link</child>
+      </joint>
+      <joint name='link_JOINT_53' type='ball'>
+        <parent>ball_bearing_52::link</parent>
+        <child>ball_bearing_53::link</child>
+      </joint>
+      <joint name='link_JOINT_54' type='ball'>
+        <parent>ball_bearing_53::link</parent>
+        <child>ball_bearing_54::link</child>
+      </joint>
+      <joint name='link_JOINT_55' type='ball'>
+        <parent>ball_bearing_54::link</parent>
+        <child>ball_bearing_55::link</child>
+      </joint>
+      <joint name='link_JOINT_56' type='ball'>
+        <parent>ball_bearing_55::link</parent>
+        <child>ball_bearing_56::link</child>
+      </joint>
+      <joint name='link_JOINT_57' type='ball'>
+        <parent>ball_bearing_56::link</parent>
+        <child>ball_bearing_57::link</child>
+      </joint>
+      <joint name='link_JOINT_58' type='ball'>
+        <parent>ball_bearing_57::link</parent>
+        <child>ball_bearing_58::link</child>
+      </joint>
+      <joint name='link_JOINT_59' type='ball'>
+        <parent>ball_bearing_58::link</parent>
+        <child>ball_bearing_59::link</child>
+      </joint>
+      <joint name='link_JOINT_60' type='ball'>
+        <parent>ball_bearing_59::link</parent>
+        <child>ball_bearing_60::link</child>
+      </joint>
+      <joint name='link_JOINT_61' type='ball'>
+        <parent>ball_bearing_60::link</parent>
+        <child>ball_bearing_61::link</child>
+      </joint>
+      <joint name='link_JOINT_62' type='ball'>
+        <parent>ball_bearing_61::link</parent>
+        <child>ball_bearing_62::link</child>
+      </joint>
+      <joint name='link_JOINT_63' type='ball'>
+        <parent>ball_bearing_62::link</parent>
+        <child>ball_bearing_63::link</child>
+      </joint>
+      <joint name='link_JOINT_64' type='ball'>
+        <parent>ball_bearing_63::link</parent>
+        <child>ball_bearing_64::link</child>
+      </joint>
+      <joint name='link_JOINT_65' type='ball'>
+        <parent>ball_bearing_64::link</parent>
+        <child>ball_bearing_65::link</child>
+      </joint>
+      <joint name='link_JOINT_66' type='ball'>
+        <parent>ball_bearing_65::link</parent>
+        <child>ball_bearing_66::link</child>
+      </joint>
+      <joint name='link_JOINT_67' type='ball'>
+        <parent>ball_bearing_66::link</parent>
+        <child>ball_bearing_67::link</child>
+      </joint>
+      <joint name='link_JOINT_68' type='ball'>
+        <parent>ball_bearing_67::link</parent>
+        <child>ball_bearing_68::link</child>
+      </joint>
+      <joint name='link_JOINT_69' type='ball'>
+        <parent>ball_bearing_68::link</parent>
+        <child>ball_bearing_69::link</child>
+      </joint>
+      <joint name='link_JOINT_70' type='ball'>
+        <parent>ball_bearing_69::link</parent>
+        <child>ball_bearing_70::link</child>
+      </joint>
+      <joint name='link_JOINT_71' type='ball'>
+        <parent>ball_bearing_70::link</parent>
+        <child>ball_bearing_71::link</child>
+      </joint>
+      <joint name='link_JOINT_72' type='ball'>
+        <parent>ball_bearing_71::link</parent>
+        <child>ball_bearing_72::link</child>
+      </joint>
+      <joint name='link_JOINT_73' type='ball'>
+        <parent>ball_bearing_72::link</parent>
+        <child>ball_bearing_73::link</child>
+      </joint>
+      <joint name='link_JOINT_74' type='ball'>
+        <parent>ball_bearing_73::link</parent>
+        <child>ball_bearing_74::link</child>
+      </joint>
+      <joint name='link_JOINT_75' type='ball'>
+        <parent>ball_bearing_74::link</parent>
+        <child>ball_bearing_75::link</child>
+      </joint>
+      <joint name='link_JOINT_76' type='ball'>
+        <parent>ball_bearing_75::link</parent>
+        <child>ball_bearing_76::link</child>
+      </joint>
+      <joint name='link_JOINT_77' type='ball'>
+        <parent>ball_bearing_76::link</parent>
+        <child>ball_bearing_77::link</child>
+      </joint>
+      <joint name='link_JOINT_78' type='ball'>
+        <parent>ball_bearing_77::link</parent>
+        <child>ball_bearing_78::link</child>
+      </joint>
+      <joint name='link_JOINT_79' type='ball'>
+        <parent>ball_bearing_78::link</parent>
+        <child>ball_bearing_79::link</child>
+      </joint>
+      <joint name='link_JOINT_80' type='ball'>
+        <parent>ball_bearing_79::link</parent>
+        <child>ball_bearing_80::link</child>
+      </joint>
+      <joint name='link_JOINT_81' type='ball'>
+        <parent>ball_bearing_80::link</parent>
+        <child>ball_bearing_81::link</child>
+      </joint>
+      <joint name='link_JOINT_82' type='ball'>
+        <parent>ball_bearing_81::link</parent>
+        <child>ball_bearing_82::link</child>
+      </joint>
+      <joint name='link_JOINT_83' type='ball'>
+        <parent>ball_bearing_82::link</parent>
+        <child>ball_bearing_83::link</child>
+      </joint>
+      <joint name='link_JOINT_84' type='ball'>
+        <parent>ball_bearing_83::link</parent>
+        <child>ball_bearing_84::link</child>
+      </joint>
+      <joint name='link_JOINT_85' type='ball'>
+        <parent>ball_bearing_84::link</parent>
+        <child>ball_bearing_85::link</child>
+      </joint>
+      <joint name='link_JOINT_86' type='ball'>
+        <parent>ball_bearing_85::link</parent>
+        <child>ball_bearing_86::link</child>
+      </joint>
+      <joint name='link_JOINT_87' type='ball'>
+        <parent>ball_bearing_86::link</parent>
+        <child>ball_bearing_87::link</child>
+      </joint>
+      <joint name='link_JOINT_88' type='ball'>
+        <parent>ball_bearing_87::link</parent>
+        <child>ball_bearing_88::link</child>
+      </joint>
+      <joint name='link_JOINT_89' type='ball'>
+        <parent>ball_bearing_88::link</parent>
+        <child>ball_bearing_89::link</child>
+      </joint>
+      <joint name='link_JOINT_90' type='ball'>
+        <parent>ball_bearing_89::link</parent>
+        <child>ball_bearing_90::link</child>
+      </joint>
+      <joint name='link_JOINT_91' type='ball'>
+        <parent>ball_bearing_90::link</parent>
+        <child>ball_bearing_91::link</child>
+      </joint>
+      <joint name='link_JOINT_92' type='ball'>
+        <parent>ball_bearing_91::link</parent>
+        <child>ball_bearing_92::link</child>
+      </joint>
+      <joint name='link_JOINT_93' type='ball'>
+        <parent>ball_bearing_92::link</parent>
+        <child>ball_bearing_93::link</child>
+      </joint>
+      <joint name='link_JOINT_94' type='ball'>
+        <parent>ball_bearing_93::link</parent>
+        <child>ball_bearing_94::link</child>
+      </joint>
+      <joint name='link_JOINT_95' type='ball'>
+        <parent>ball_bearing_94::link</parent>
+        <child>ball_bearing_95::link</child>
+      </joint>
+      <joint name='link_JOINT_96' type='ball'>
+        <parent>ball_bearing_95::link</parent>
+        <child>ball_bearing_96::link</child>
+      </joint>
+      <joint name='link_JOINT_97' type='ball'>
+        <parent>ball_bearing_96::link</parent>
+        <child>ball_bearing_97::link</child>
+      </joint>
+      <joint name='link_JOINT_98' type='ball'>
+        <parent>ball_bearing_97::link</parent>
+        <child>ball_bearing_98::link</child>
+      </joint>
+      <joint name='link_JOINT_99' type='ball'>
+        <parent>ball_bearing_98::link</parent>
+        <child>ball_bearing_99::link</child>
+      </joint>
+      <joint name='link_JOINT_100' type='ball'>
         <parent>fastening::link</parent>
         <child>ball_bearing_0::link</child>
       </joint>
       <static>0</static>
       <allow_auto_disable>1</allow_auto_disable>
-      <pose frame=''>0.036428 -0.57063 0.000406 0 -0 0</pose>
+      <pose frame=''>-0.043839 -4.98118 0.015545 -0.011086 0 0</pose>
     </model>
     <joint name='/imu_joint' type='revolute'>
       <parent>base_link</parent>
@@ -1205,9 +6425,9 @@
         </ode>
       </physics>
     </joint>
-    <joint name='link_JOINT_0' type='ball'>
-      <parent>my_rope::ball_bearing_9::link</parent>
-      <child>base_link</child>
+    <joint name='base_link_JOINT_0' type='ball'>
+      <parent>base_link</parent>
+      <child>my_rope::ball_bearing_99::link</child>
       <pose frame=''>0 0 0 0 -0 0</pose>
       <physics>
         <ode>
